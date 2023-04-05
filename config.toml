@@ -1,4 +1,4 @@
-baseurl = "https://sora3765/soramemo/"
+baseurl = "https://sora3765.github.io/soramemo/"
 title = "SORA のメモ帳"
 theme = "hugo-theme-cleanwhite"
 languageCode = "ja-jp"
@@ -8,8 +8,7 @@ googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
-publishDir = "docs"
-canonifyurls = true
+
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
