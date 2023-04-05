@@ -8,8 +8,8 @@ googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
+publishDir = "docs"
 canonifyurls = true
-
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
