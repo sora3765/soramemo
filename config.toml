@@ -135,3 +135,7 @@ params = ["categories", "tags"]
     block = true
   [markup.goldmark.renderer]
     unsafe = true
+
+[taxonomies]
+ tag = "tags"
+ category = "categories"

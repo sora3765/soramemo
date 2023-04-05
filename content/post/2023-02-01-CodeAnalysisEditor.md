@@ -3,9 +3,9 @@ title:       "CodeAnalysisEditor"
 subtitle:    "コードを翻訳するプログラム"
 description: ""
 date:        2023-01-01
-author:      "makishima"
+author:      "sora"
 image:       ""
-tags:        ["make", "tec"]
+tags:        ["make", "tech"]
 categories:  ["Tech"]
 isCJKLanguage: true
 ---
