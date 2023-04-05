@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="sora">
-    <meta property="og:description" content="sora" />
-    <meta property="twitter:description" content="sora" />
+    <meta name="description" content="gitの基本">
+    <meta property="og:description" content="gitの基本" />
+    <meta property="twitter:description" content="gitの基本" />
     
 
     
@@ -53,7 +53,7 @@
     <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
 
     
-    
+    <link rel="stylesheet" href="https://sora3765.github.io/soramemo/css/custom-font.css">
 
     
     <script src="https://sora3765.github.io/soramemo/js/jquery.min.js"></script>
@@ -214,7 +214,141 @@
                 post-container">
 
                 
-                
+                <h1 id="gitの基本">「gitの基本」</h1>
+<h2 id="gitとは">gitとは</h2>
+<ul>
+<li>ファイルのバージョン管理システム</li>
+<li>誰がいつ何を編集したのか分かる</li>
+<li>スナップショットのように管理されていていつでも戻れる</li>
+</ul>
+<h2 id="gitの操作の流れ">gitの操作の流れ</h2>
+<ul>
+<li>ローカルでは主に3つに分かれている　</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ワークツリー</td>
+<td>作業している場所</td>
+</tr>
+<tr>
+<td>ステージ</td>
+<td>スナップショットを記録する準備場所</td>
+</tr>
+<tr>
+<td>リポジトリ</td>
+<td>スナップショットを記録</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>ワークツリーからステージ</p>
+<ul>
+<li><code>git add</code></li>
+<li>ファイルを圧縮し、名前と紐付ける</li>
+</ul>
+</li>
+<li>
+<p>ステージからリポジトリ</p>
+<ul>
+<li><code>git commit</code></li>
+<li>ステージのものに様々な情報を付け加える</li>
+</ul>
+</li>
+<li>
+<p>最終的にリポジトリには　圧縮ファイル　名前が紐付けられたツリー　様々な情報のコミット　の3種類が保存されている</p>
+</li>
+<li>
+<p>リポジトリに追加で変更を加える際には前のとの紐付けデータも併せて保存される</p>
+</li>
+</ul>
+<h2 id="リポジトリ内容の詳細">リポジトリ内容の詳細</h2>
+<ul>
+<li>
+<p>圧縮ファイル</p>
+<ul>
+<li>正式名称は「blobオブジェクト」</li>
+<li>実際にはハッシュID</li>
+<li>違う内容の<code>git add</code>を行うたびに作成される</li>
+</ul>
+</li>
+<li>
+<p>ツリーファイル</p>
+<ul>
+<li>正式名称は「treeオブジェクト」</li>
+<li>構造や名前を持たない圧縮ファイルに構造を与えるための物</li>
+</ul>
+</li>
+<li>
+<p>コミットファイル</p>
+<ul>
+<li>正式名称は「commitオブジェクト」</li>
+<li>ファイルの構造に　いつ　誰が　何を　何のために　を保存した物</li>
+</ul>
+</li>
+<li>
+<p>これら3つでもってスナップショットを記録している</p>
+</li>
+</ul>
+<h1 id="gitの流れ">「gitの流れ」</h1>
+<h2 id="リポジトリの作成">リポジトリの作成</h2>
+<ul>
+<li>管理したいフォルダに移動し、<code>git init</code>と入力
+<ul>
+<li>.gitファイルが作成される
+<ul>
+<li>objectsは前著した3つのリポジトリが保存されている</li>
+<li>configはgitの設定ファイル</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="既にあるリポジトリのコピー">既にあるリポジトリのコピー</h2>
+<ul>
+<li><code>git clone &lt;リポジトリのURL&gt;</code>と入力するとクローンが作成される
+<ul>
+<li>コピー内容は本体と.gitディレクトリ</li>
+</ul>
+</li>
+</ul>
+<h2 id="変更をステージに追加">変更をステージに追加</h2>
+<ul>
+<li><code>git add &lt;ファイル名ORディレクトリ名&gt;</code>で追加したいファイルを、</li>
+<li><code>git add .</code>で全てをステージに追加出来る</li>
+</ul>
+<h2 id="変更を記録">変更を記録</h2>
+<ul>
+<li><code>git commit</code>で記録することが出来る</li>
+<li><code>git commit -m &quot;xxx&quot;</code>でコメントを</li>
+<li><code>git commit -v</code>で変更内容確認など様々なオプションがある</li>
+</ul>
+<h2 id="現在の状況の確認">現在の状況の確認</h2>
+<ul>
+<li><code>git status</code>で現在の変更状況を確認できる</li>
+<li>確認出来る情報は主に2点
+<ul>
+<li>ワークツリーとステージの差分</li>
+<li>ステージとリポジトリの差分</li>
+</ul>
+</li>
+<li>addやcommitをする前に確認する癖をつけよう</li>
+</ul>
+<h2 id="何を変更するのか確認">何を変更するのか確認</h2>
+<ul>
+<li><code>git diff</code> <code>git diff &lt;ファイル名&gt;</code>でワークツリーとステージ間の差分を</li>
+<li><code>git diff --staged</code>でステージとリポジトリ間の差分を表示出来る</li>
+<li>正確には一つ前の物と最新の物の違いを表示するコマンド</li>
+</ul>
+<h2 id="変更履歴の確認">変更履歴の確認</h2>
+
 
                 
 
