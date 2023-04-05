@@ -6,22 +6,31 @@
     <description>Recent content in Tags on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sora3765.github.io/soramemo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sora3765.github.io/soramemo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>memo</title>
+      <link>https://sora3765.github.io/soramemo/tags/memo/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sora3765.github.io/soramemo/tags/memo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://sora3765.github.io/soramemo/tags/tech/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sora3765.github.io/soramemo/tags/tech/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>make</title>
       <link>https://sora3765.github.io/soramemo/tags/make/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sora3765.github.io/soramemo/tags/make/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tec</title>
-      <link>https://sora3765.github.io/soramemo/tags/tec/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://sora3765.github.io/soramemo/tags/tec/</guid>
       <description></description>
     </item>
     
