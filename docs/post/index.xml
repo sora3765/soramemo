@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on SORA のメモ帳</title>
+    <link>https://zhaohuabing.com/post/</link>
+    <description>Recent content in Posts on SORA のメモ帳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zhaohuabing.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CodeAnalysisEditor</title>
+      <link>https://zhaohuabing.com/post/2023-02-01-codeanalysiseditor/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaohuabing.com/post/2023-02-01-codeanalysiseditor/</guid>
+      <description>CodeAnalysisEditorとは プログラミングのコードを翻訳してくれるサイトです</description>
+    </item>
+    
+    <item>
+      <title>Clean White Theme for Hugo</title>
+      <link>https://zhaohuabing.com/post/readme/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaohuabing.com/post/readme/</guid>
+      <description>Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&amp;rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster</description>
+    </item>
+    
+  </channel>
+</rss>

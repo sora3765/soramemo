@@ -1,22 +1,24 @@
 baseurl = "https://zhaohuabing.com"
-title = "Makishima Portfolio"
+title = "SORA のメモ帳"
 theme = "hugo-theme-cleanwhite"
-languageCode = "ja"
+languageCode = "ja-jp"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
+publishDir = "docs"
+canonifyurls = true
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/home-bg-oosaka.jpg"
-  SEOTitle = "Makishima Portfolio"
-  description = "makishima"
-  keyword = "makishima tec"
+  SEOTitle = "SORA のメモ帳"
+  description = "sora"
+  keyword = "sora tec"
   slogan = "i dwell in possibility"
 
   image_404 = "img/404-bg.jpg"
@@ -29,7 +31,7 @@ home = ["HTML", "RSS", "Algolia"]
   leancloud_app_key = ""
 
   # algolia site search
-  algolia_search = true
+  algolia_search = false
   algolia_appId = ""
   algolia_indexName = ""
   algolia_apiKey = ""
@@ -68,12 +70,12 @@ home = ["HTML", "RSS", "Algolia"]
 
   [params.social]
   rss            = true 
-  email          = "so_makishima-rec@yahoo.co.jp"
+  email          = "hnksb640@yahoo.co.jp"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
   #linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
-  stackoverflow  = "https://ja.stackoverflow.com/users/57405/sora3765"
+  #stackoverflow  = "https://ja.stackoverflow.com/users/57405/sora3765"
   #instagram     = "full profile url in instagram"
   github         = "https://github.com/sora3765"
   #wechat         = "your wechat qr code image"
