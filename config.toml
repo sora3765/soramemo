@@ -1,4 +1,4 @@
-baseurl = "https://sora3765/soramemo/"
+baseurl = "https://sora3765.github.io/soramemo/"
 title = "SORA のメモ帳"
 theme = "hugo-theme-cleanwhite"
 languageCode = "ja-jp"
