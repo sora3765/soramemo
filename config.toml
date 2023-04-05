@@ -8,6 +8,7 @@ googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
+canonifyurls = true
 
 
 [outputs]
