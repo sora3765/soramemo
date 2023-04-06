@@ -1,5 +1,5 @@
 # soraのメモ帳
 
 - HUGOのcleanwhiteテーマを使用
-- Github PagesとGithub ActionsでCI/CD化
-- [SORAのメモ帳](https://sora3765.github.io/soramemo/)
+- netlifyでCI/CD化
+- [SORAのメモ帳](https://warm-cascaron-0c6d56.netlify.app)
