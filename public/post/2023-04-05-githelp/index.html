@@ -215,13 +215,14 @@
 
                 
                 <h1 id="gitの基本">「gitの基本」</h1>
-<h2 id="gitとは">gitとは</h2>
+<hr>
+<h3 id="gitとは">gitとは</h3>
 <ul>
 <li>ファイルのバージョン管理システム</li>
 <li>誰がいつ何を編集したのか分かる</li>
 <li>スナップショットのように管理されていていつでも戻れる</li>
 </ul>
-<h2 id="gitの操作の流れ">gitの操作の流れ</h2>
+<h3 id="gitの操作の流れ">gitの操作の流れ</h3>
 <ul>
 <li>ローカルでは主に3つに分かれている　</li>
 </ul>
@@ -269,7 +270,7 @@
 <p>リポジトリに追加で変更を加える際には前のとの紐付けデータも併せて保存される</p>
 </li>
 </ul>
-<h2 id="リポジトリ内容の詳細">リポジトリ内容の詳細</h2>
+<h3 id="リポジトリ内容の詳細">リポジトリ内容の詳細</h3>
 <ul>
 <li>
 <p>圧縮ファイル</p>
@@ -298,7 +299,8 @@
 </li>
 </ul>
 <h1 id="gitの流れ">「gitの流れ」</h1>
-<h2 id="リポジトリの作成">リポジトリの作成</h2>
+<hr>
+<h3 id="リポジトリの作成">リポジトリの作成</h3>
 <ul>
 <li>管理したいフォルダに移動し、<code>git init</code>と入力
 <ul>
@@ -311,7 +313,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="既にあるリポジトリのコピー">既にあるリポジトリのコピー</h2>
+<h3 id="既にあるリポジトリのコピー">既にあるリポジトリのコピー</h3>
 <ul>
 <li><code>git clone &lt;リポジトリのURL&gt;</code>と入力するとクローンが作成される
 <ul>
@@ -319,18 +321,18 @@
 </ul>
 </li>
 </ul>
-<h2 id="変更をステージに追加">変更をステージに追加</h2>
+<h3 id="変更をステージに追加">変更をステージに追加</h3>
 <ul>
 <li><code>git add &lt;ファイル名ORディレクトリ名&gt;</code>で追加したいファイルを、</li>
 <li><code>git add .</code>で全てをステージに追加出来る</li>
 </ul>
-<h2 id="変更を記録">変更を記録</h2>
+<h3 id="変更を記録">変更を記録</h3>
 <ul>
 <li><code>git commit</code>で記録することが出来る</li>
 <li><code>git commit -m &quot;xxx&quot;</code>でコメントを</li>
 <li><code>git commit -v</code>で変更内容確認など様々なオプションがある</li>
 </ul>
-<h2 id="現在の状況の確認">現在の状況の確認</h2>
+<h3 id="現在の状況の確認">現在の状況の確認</h3>
 <ul>
 <li><code>git status</code>で現在の変更状況を確認できる</li>
 <li>確認出来る情報は主に2点
@@ -341,13 +343,96 @@
 </li>
 <li>addやcommitをする前に確認する癖をつけよう</li>
 </ul>
-<h2 id="何を変更するのか確認">何を変更するのか確認</h2>
+<h3 id="何を変更するのか確認">何を変更するのか確認</h3>
 <ul>
 <li><code>git diff</code> <code>git diff &lt;ファイル名&gt;</code>でワークツリーとステージ間の差分を</li>
 <li><code>git diff --staged</code>でステージとリポジトリ間の差分を表示出来る</li>
 <li>正確には一つ前の物と最新の物の違いを表示するコマンド</li>
 </ul>
-<h2 id="変更履歴の確認">変更履歴の確認</h2>
+<h3 id="変更履歴の確認">変更履歴の確認</h3>
+<ul>
+<li><code>git log</code>コマンドで今までの変更履歴の確認が出来る</li>
+<li><code>git log --oneline</code>で一行表示</li>
+<li><code>git log -n &lt;コミット数&gt;</code>で一定数</li>
+<li><code>git log -p &lt;ファイル名&gt;</code>で一ファイルのみ</li>
+<li>最近の変更から順に表示される</li>
+</ul>
+<h3 id="ファイルの削除">ファイルの削除</h3>
+<ul>
+<li><code>git rm &lt;ファイル名&gt;</code>でワークツリーのファイルごと削除</li>
+<li><code>git rm -r &lt;ディレクトリ名&gt;</code>でワークツリーのディレクトリごと削除</li>
+<li><code>git rm --cached &lt;ファイル名&gt;</code>でgitの記録のみ削除</li>
+</ul>
+<h3 id="githubへのプッシュ">GitHubへのプッシュ</h3>
+<ul>
+<li>気をつけるのはデフォルトのブランチ名
+<ul>
+<li>gitの初期設定は<code>master</code></li>
+<li>githubの初期設定は<code>main</code></li>
+<li>デフォルトのブランチ名の変更は<code>git config --global init.defaultBranch main</code></li>
+<li>既にあるブランチ名の変更は<code>git branch -m master main</code></li>
+</ul>
+</li>
+<li><code>git remote add origin &lt;github_URL&gt;</code>でリモートリポジトリを登録できる
+<ul>
+<li>このoriginとは以後URLの代わりに使える物</li>
+</ul>
+</li>
+<li><code>git push &lt;リモート名&gt; &lt;ブランチ名&gt;</code>でGitHubへ送信出来る
+<ul>
+<li>通常は<code>git push -u origin main</code>となることが多い</li>
+<li><code>-u</code>コマンドを付けると以後<code>git push</code>のみでプッシュ出来るようになる</li>
+</ul>
+</li>
+</ul>
+<h1 id="gitの小技">「gitの小技」</h1>
+<h3 id="コマンドの簡易入力エイリアス">コマンドの簡易入力(エイリアス)</h3>
+<ul>
+<li><code>git config --global alias.ci commit</code>でcommitをciと入力できる
+<ul>
+<li>commitをci statusをst branchをbr chekoutをcoなど</li>
+<li>&ndash;globalを付けるとPC自体の設定を変更できる</li>
+</ul>
+</li>
+</ul>
+<h3 id="バージョン管理しないファイルの設定">バージョン管理しないファイルの設定</h3>
+<ul>
+<li>パスワードなどのファイルやチーム開発で必要では無いものはgit管理から外す</li>
+<li><code>.gitignore</code>ファイルを作成し、その中に記述する
+<ul>
+<li><code>temp.html</code>はtemp.htmlファイルを無視</li>
+<li><code>temp/</code>は全てのtempディレクトリを無視</li>
+<li><code>/temp/</code>はgitignoreのディレクトリから相対パスで判断して無視</li>
+<li><code>*.txt</code>は.txt全てを無視</li>
+</ul>
+</li>
+</ul>
+<h1 id="変更した物の取り消し">「変更した物の取り消し」</h1>
+<h3 id="ワークツリーの変更をステージ時点に戻す">ワークツリーの変更をステージ時点に戻す</h3>
+<ul>
+<li><code>git checkout -- &lt;ファイル名ORディレクトリ名&gt;</code>で戻す</li>
+<li><code>git checkout -- .</code>で全て戻す</li>
+</ul>
+<h3 id="ステージに追加した変更を取り消す">ステージに追加した変更を取り消す</h3>
+<ul>
+<li>間違った物を<code>git add</code>してしまったときに使われる
+<ul>
+<li>ステージから取り消すだけなのでワークツリーには影響ない</li>
+</ul>
+</li>
+<li><code>git reset HEAD &lt;ファイル名ORディレクトリ名&gt;</code>ファイルやディレクトリのみ取り消し</li>
+<li><code>git reset HEAD .</code>全ての変更を取り消す</li>
+</ul>
+<h3 id="コミットした物をやり直す">コミットした物をやり直す</h3>
+<ul>
+<li>正確には一度コミットした物を変更したい場合に使う
+<ul>
+<li>変更後のステージに更新するもの</li>
+<li>PUSHした後に使うのは絶対にNG</li>
+</ul>
+</li>
+<li><code>git commit --amend</code>で現在のステージに改正される</li>
+</ul>
 
 
                 
