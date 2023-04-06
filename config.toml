@@ -1,4 +1,4 @@
-baseurl = "https://sora3765.github.io/soramemo/"
+baseurl = "https://warm-cascaron-0c6d56.netlify.app"
 title = "SORA のメモ帳"
 theme = "hugo-theme-cleanwhite"
 languageCode = "ja-jp"
@@ -8,8 +8,9 @@ googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
-#canonifyurls = true
+canonifyURLs = true
 #relativeURLs = true
+#uglyURLs = true
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
