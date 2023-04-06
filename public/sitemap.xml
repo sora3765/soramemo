@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sora3765.github.io/soramemo/categories/</loc>
+    <loc>/soramemo/categories/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/post/2023-04-05-githelp/</loc>
+    <loc>/soramemo/post/2023-04-05-githelp/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/tags/memo/</loc>
+    <loc>/soramemo/tags/memo/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/post/</loc>
+    <loc>/soramemo/post/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/</loc>
+    <loc>/soramemo/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/tags/</loc>
+    <loc>/soramemo/tags/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/tags/tech/</loc>
+    <loc>/soramemo/tags/tech/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/categories/tech/</loc>
+    <loc>/soramemo/categories/tech/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/post/2023-02-01-codeanalysiseditor/</loc>
+    <loc>/soramemo/post/2023-02-01-codeanalysiseditor/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/tags/make/</loc>
+    <loc>/soramemo/tags/make/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/post/readme/</loc>
+    <loc>/soramemo/post/readme/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/about/</loc>
+    <loc>/soramemo/about/</loc>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/notes/</loc>
+    <loc>/soramemo/notes/</loc>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/search/placeholder/</loc>
+    <loc>/soramemo/search/placeholder/</loc>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/archive/</loc>
+    <loc>/soramemo/archive/</loc>
   </url><url>
-    <loc>https://sora3765.github.io/soramemo/search/</loc>
+    <loc>/soramemo/search/</loc>
   </url>
 </urlset>

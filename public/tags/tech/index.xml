@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tech on SORA のメモ帳</title>
-    <link>https://sora3765.github.io/soramemo/tags/tech/</link>
+    <link>/soramemo/tags/tech/</link>
     <description>Recent content in tech on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sora3765.github.io/soramemo/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/soramemo/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gitの覚え書きまとめ</title>
-      <link>https://sora3765.github.io/soramemo/post/2023-04-05-githelp/</link>
+      <link>/soramemo/post/2023-04-05-githelp/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/post/2023-04-05-githelp/</guid>
+      <guid>/soramemo/post/2023-04-05-githelp/</guid>
       <description>「gitの基本」 gitとは ファイルのバージョン管理システム 誰がいつ何を編集したのか分かる スナップショットのように管理されていていつでも戻れる</description>
     </item>
     
     <item>
       <title>CodeAnalysisEditor</title>
-      <link>https://sora3765.github.io/soramemo/post/2023-02-01-codeanalysiseditor/</link>
+      <link>/soramemo/post/2023-02-01-codeanalysiseditor/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/post/2023-02-01-codeanalysiseditor/</guid>
+      <guid>/soramemo/post/2023-02-01-codeanalysiseditor/</guid>
       <description>CodeAnalysisEditorとは プログラミングのコードを翻訳してくれるサイトです</description>
     </item>
     

@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SORA のメモ帳</title>
-    <link>https://sora3765.github.io/soramemo/tags/</link>
+    <link>/soramemo/tags/</link>
     <description>Recent content in Tags on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sora3765.github.io/soramemo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/soramemo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>memo</title>
-      <link>https://sora3765.github.io/soramemo/tags/memo/</link>
+      <link>/soramemo/tags/memo/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/tags/memo/</guid>
+      <guid>/soramemo/tags/memo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tech</title>
-      <link>https://sora3765.github.io/soramemo/tags/tech/</link>
+      <link>/soramemo/tags/tech/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/tags/tech/</guid>
+      <guid>/soramemo/tags/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>make</title>
-      <link>https://sora3765.github.io/soramemo/tags/make/</link>
+      <link>/soramemo/tags/make/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/tags/make/</guid>
+      <guid>/soramemo/tags/make/</guid>
       <description></description>
     </item>
     
