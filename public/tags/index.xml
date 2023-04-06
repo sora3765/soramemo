@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SORA のメモ帳</title>
-    <link>https://sora3765.github.io/soramemo/tags/</link>
+    <link>https://warm-cascaron-0c6d56.netlify.app/tags/</link>
     <description>Recent content in Tags on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sora3765.github.io/soramemo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>memo</title>
-      <link>https://sora3765.github.io/soramemo/tags/memo/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/tags/memo/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/tags/memo/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/tags/memo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tech</title>
-      <link>https://sora3765.github.io/soramemo/tags/tech/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/tags/tech/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/tags/tech/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/tags/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>make</title>
-      <link>https://sora3765.github.io/soramemo/tags/make/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/tags/make/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/tags/make/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/tags/make/</guid>
       <description></description>
     </item>
     

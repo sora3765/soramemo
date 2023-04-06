@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SORA のメモ帳</title>
-    <link>https://sora3765.github.io/soramemo/</link>
+    <link>https://warm-cascaron-0c6d56.netlify.app/</link>
     <description>Recent content on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sora3765.github.io/soramemo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gitの覚え書きまとめ</title>
-      <link>https://sora3765.github.io/soramemo/post/2023-04-05-githelp/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/post/2023-04-05-githelp/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/</guid>
       <description>「gitの基本」 gitとは ファイルのバージョン管理システム 誰がいつ何を編集したのか分かる スナップショットのように管理されていていつでも戻れる</description>
     </item>
     
     <item>
       <title>CodeAnalysisEditor</title>
-      <link>https://sora3765.github.io/soramemo/post/2023-02-01-codeanalysiseditor/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-02-01-codeanalysiseditor/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/post/2023-02-01-codeanalysiseditor/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-02-01-codeanalysiseditor/</guid>
       <description>CodeAnalysisEditorとは プログラミングのコードを翻訳してくれるサイトです</description>
     </item>
     
     <item>
       <title>Clean White Theme for Hugo</title>
-      <link>https://sora3765.github.io/soramemo/post/readme/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/post/readme/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/post/readme/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/post/readme/</guid>
       <description>Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&amp;rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sora3765.github.io/soramemo/about/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/about/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/about/</guid>
       <description>About Me 読書＆ゲーム好き インフラに詳しくなりたい</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sora3765.github.io/soramemo/notes/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/notes/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/notes/</guid>
       <description>HUGO </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sora3765.github.io/soramemo/search/placeholder/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/search/placeholder/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/search/placeholder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts Archive</title>
-      <link>https://sora3765.github.io/soramemo/archive/</link>
+      <link>https://warm-cascaron-0c6d56.netlify.app/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sora3765.github.io/soramemo/archive/</guid>
+      <guid>https://warm-cascaron-0c6d56.netlify.app/archive/</guid>
       <description></description>
     </item>
     
