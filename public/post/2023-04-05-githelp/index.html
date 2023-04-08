@@ -32,7 +32,7 @@
     
 
     <meta name="keyword"  content="sora tec">
-    <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon2.ico">
+    <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon.ico">
 
     <title>gitの覚え書きまとめ | SORA のメモ帳</title>
 
@@ -249,26 +249,20 @@
 </tbody>
 </table>
 <ul>
-<li>
-<p>ワークツリーからステージ</p>
+<li>ワークツリーからステージ
 <ul>
 <li><code>git add</code></li>
 <li>ファイルを圧縮し、名前と紐付ける</li>
 </ul>
 </li>
-<li>
-<p>ステージからリポジトリ</p>
+<li>ステージからリポジトリ
 <ul>
 <li><code>git commit</code></li>
 <li>ステージのものに様々な情報を付け加える</li>
 </ul>
 </li>
-<li>
-<p>最終的にリポジトリには　圧縮ファイル　名前が紐付けられたツリー　様々な情報のコミット　の3種類が保存されている</p>
-</li>
-<li>
-<p>リポジトリに追加で変更を加える際には前のとの紐付けデータも併せて保存される</p>
-</li>
+<li>最終的にリポジトリには　圧縮ファイル　名前が紐付けられたツリー　様々な情報のコミット　の3種類が保存されている</li>
+<li>リポジトリに追加で変更を加える際には前のとの紐付けデータも併せて保存される</li>
 </ul>
 <h3 id="リポジトリ内容の詳細">リポジトリ内容の詳細</h3>
 <ul>
@@ -440,8 +434,42 @@
 <h3 id="リモートリポジトリ関連">リモートリポジトリ関連</h3>
 <ul>
 <li><code>git remote</code>・・・登録されているリモート名</li>
+<li><code>git remote show &lt;リモート名&gt;</code>で全体の詳しい情報が見られる</li>
 <li><code>git remote -v</code>・・・登録されているリモートURL</li>
 <li><code>git remote add &lt;リモート名&gt; &lt;リモートURL&gt;</code>で複数登録する事も出来る</li>
+<li><code>git remote show &lt;リモート名&gt;</code>で全体の詳しい情報が見られる</li>
+</ul>
+<h3 id="リモートからの取得fetch">リモートからの取得(fetch)</h3>
+<ul>
+<li>リモートリポジトリからローカルリポジトリに取得してくる
+<ul>
+<li>ワークツリーは変化ないので注意</li>
+</ul>
+</li>
+<li><code>git fetch &lt;リモート名&gt;</code>でローカルリポジトリへ取得できる</li>
+<li><code>git marge</code>で持ってきた物をワークツリーへ反映出来る</li>
+</ul>
+<h3 id="リモートからの取得pull">リモートからの取得(pull)</h3>
+<ul>
+<li>リモートからの取得とマージを両方したい時に使う</li>
+<li><code>git pull &lt;リモート名&gt; &lt;ブランチ名&gt;</code>でfetch+margeと同じ事が出来る</li>
+<li>自分の今いるブランチに統合されてしまう事に注意
+<ul>
+<li>慣れるまではfetch margeしたほうが良いかも</li>
+</ul>
+</li>
+</ul>
+<h3 id="リモート名の変更削除">リモート名の変更削除</h3>
+<ul>
+<li><code>git remote rename &lt;旧リモート名&gt; &lt;新リモート名&gt;</code>で名前の変更が出来る</li>
+<li><code>git remote rm &lt;リモート名&gt;</code>でリモートの削除が出来る</li>
+</ul>
+<h1 id="ブランチとマージ">ブランチとマージ</h1>
+<hr>
+<h3 id="ブランチとは">ブランチとは</h3>
+<ul>
+<li>複数人が並行して複数機能を開発するためにある機能</li>
+<li>大本のブランチとは別にブランチを作成し、後で合流させることで大本の変更に左右されること無く開発が出来る</li>
 </ul>
 
 
