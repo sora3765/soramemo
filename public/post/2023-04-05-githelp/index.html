@@ -547,6 +547,88 @@
 <li>下部はsubブランチの内容</li>
 <li><code>git status</code>で状況を確認し、それをもとに修正する</li>
 </ul>
+<h3 id="ブランチ名の変更とブランチの削除">ブランチ名の変更とブランチの削除</h3>
+<ul>
+<li><code>git branch -m &lt;変更後のブランチ名&gt;</code>でブランチ名を変更出来る</li>
+<li><code>git branch -d &lt;ブランチ名&gt;</code>でmainブランチにマージ済みの場合のみ削除できる</li>
+<li><code>git branch -D &lt;ブランチ名&gt;</code>でマージ関係なく強制削除ができる</li>
+</ul>
+<h1 id="プルリクエスト">プルリクエスト</h1>
+<hr>
+<h3 id="プルリクエストとは">プルリクエストとは</h3>
+<ul>
+<li>誰かが変更したコードをリポジトリへ取り込む前にレビューを他の人へ依頼する仕組み
+<ul>
+<li>バグの抑止やコードの質の担保</li>
+</ul>
+</li>
+</ul>
+<h3 id="プルリクエストの手順">プルリクエストの手順</h3>
+<p>newブランチをmainブランチへマージする場合</p>
+<ol>
+<li>gitHubへ移動し、リポジトリのPullRequestsをクリック</li>
+<li>new pull requestをクリックし、baseをmainに compareをnewにする</li>
+<li>Createを押すとタイトルと本文を入力できる</li>
+<li>プルリクエストを作成したのち、Reviewersからレビューの依頼が行える</li>
+<li>依頼された側はプルリクエスト画面へ行き、レビューを行った後、Review changesボタンから完了できる</li>
+<li>レビューが完了したら、Confirm mergeボタンからマージが出来る</li>
+</ol>
+<h3 id="githubでチーム開発する際の決まり事">Githubでチーム開発する際の決まり事</h3>
+<ul>
+<li>mainブランチはいつデプロイしても良い状態にしておくこと</li>
+<li>そのために開発する際は新しくブランチを作り、その中で開発すること</li>
+<li><code>git push -f</code>などの強引なコマンドはダメ</li>
+<li>mainにマージする際はプルリクエストを使い、レビューを受けること</li>
+<li>出来ればmainブランチにマージした時点で自動でテストとデプロイを行いたい</li>
+</ul>
+<h1 id="タグについて">タグについて</h1>
+<hr>
+<h3 id="タグとは">タグとは</h3>
+<ul>
+<li>リリースした時点など特徴的なコミットをわかりやすくする機能</li>
+<li>バグが起きた際の切り戻しにも役立つ</li>
+<li>2種類のタグがあり、コメントなどが付けられるタグと名前のみの簡単なタグがある
+<ul>
+<li>基本はコメントを付ける</li>
+</ul>
+</li>
+<li><code>git tag</code>コマンドで登録済みのタグ一覧を閲覧できる</li>
+</ul>
+<h3 id="タグの作成">タグの作成</h3>
+<ul>
+<li><code>git tag -a &lt;タグ名&gt; -m &quot;コメント&quot;</code>でコメント付きのタグを</li>
+<li><code>git tag &lt;タグ名&gt;</code>で簡単なタグを作成出来る</li>
+<li>コメント付きの場合は署名などの情報も自動で追加される</li>
+<li><code>git show &lt;タグ名&gt;</code>でタグのデータを表示できる</li>
+</ul>
+<h3 id="タグをリモートリポジトリへ送信">タグをリモートリポジトリへ送信</h3>
+<ul>
+<li><code>git push &lt;リモート名&gt; &lt;タグ名&gt;</code>でタグ単体を</li>
+<li><code>git push &lt;リモート名&gt; --tags</code>でリモートリポジトリに存在しないタグを一斉送信出来る</li>
+</ul>
+<h1 id="スタッシュでの一時避難">スタッシュでの一時避難</h1>
+<hr>
+<h3 id="スタッシュとは">スタッシュとは</h3>
+<ul>
+<li>「まだコミットしたくないけど、別のブランチで急遽作業しないといけなくなった」などの場合に今あるデータを一時保存できる仕組み</li>
+</ul>
+<h3 id="スタッシュの保存">スタッシュの保存</h3>
+<ul>
+<li><code>git stash</code>で現在のステージ内容をスタッシュ領域に一時保存出来る</li>
+<li><code>git stash list</code>で避難した作業一覧を表示出来る</li>
+</ul>
+<h3 id="スタッシュの復元">スタッシュの復元</h3>
+<ul>
+<li><code>git stash apply</code>で最新の作業の復元を</li>
+<li><code>git stash apply --index</code>でステージ状況も合わせて復元できる</li>
+<li><code>git stash &lt;スタッシュ名&gt;</code>で特定の作業を復元できる</li>
+</ul>
+<h3 id="スタッシュの削除">スタッシュの削除</h3>
+<ul>
+<li><code>git stash drop</code>で最新の作業を削除</li>
+<li><code>git stash drop &lt;スタッシュ名&gt;</code>で特定の作業を削除出来る</li>
+<li><code>git stash clear</code>で全てのスタッシュを削除出来る</li>
+</ul>
 
 
                 
