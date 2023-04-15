@@ -496,7 +496,7 @@
 </li>
 <li><code>git branch</code>で今あるブランチの一覧が表示される
 <ul>
-<li>現在いるブランチは<code>*</code>がついている</li>
+<li>現在いるブランチは<code>*</code>がßついている</li>
 <li><code>-a</code>オプションでリモートリポジトリも表示される</li>
 </ul>
 </li>
@@ -508,7 +508,44 @@
 </ul>
 <h3 id="マージとは">マージとは</h3>
 <ul>
-<li>分岐した</li>
+<li>分岐した開発ラインを一つのブランチへまとめること</li>
+<li>マージには主に３種類ある
+<ul>
+<li>FastFoward(早送りマージ)
+<ul>
+<li>枝分かれしていなかった場合のマージ</li>
+</ul>
+</li>
+<li>AutoMerge(基本的なマージ)
+<ul>
+<li>枝分かれしているものを統合するマージ</li>
+</ul>
+</li>
+<li>コンフリクト
+<ul>
+<li>同一箇所を複数人が編集している場合にどの変更を優先するか分からない状態</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="マージする">マージする</h3>
+<ul>
+<li><code>git marge &lt;ブランチ名ORリモート名/ブランチ名&gt;</code>自分のいるブランチへ統合されるため、統合したいブランチ名を記述し、マージ出来る</li>
+</ul>
+<h3 id="コンフリクト衝突">コンフリクト（衝突）</h3>
+<ul>
+<li>コンフリクトした場合には以下のような内容が表示される</li>
+</ul>
+<pre tabindex="0"><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+&lt;p&gt;aaaaaaaa&lt;/p&gt;
+=======
+&lt;p&gt;bbbbbbbb&lt;/p&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; sub
+</code></pre><ul>
+<li>HEADは自分のブランチの内容</li>
+<li>下部はsubブランチの内容</li>
+<li><code>git status</code>で状況を確認し、それをもとに修正する</li>
 </ul>
 
 
