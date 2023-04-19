@@ -16,7 +16,7 @@ canonifyURLs = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "img/home-bg-oosaka.jpg"
+  header_image = "img/home-bg-umi.jpg"
   SEOTitle = "SORA のメモ帳"
   description = "sora"
   keyword = "sora tec"
@@ -38,7 +38,7 @@ home = ["HTML", "RSS", "Algolia"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Class of 2024, Interested in backend and infrastructure"
+  sidebar_about_description = "I like reading and games, Interested in backend and infrastructure"
   #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
   sidebar_avatar = "img/IMG_0536.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 

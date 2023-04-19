@@ -11,6 +11,6 @@ isCJKLanguage: true
 ---
 
 ## CodeAnalysisEditorとは
-プログラミングのコードを翻訳してくれるサイトです
+- プログラミングのコードを翻訳してくれるサイトです
 
 
