@@ -14,3 +14,4 @@ isCJKLanguage: true
 - プログラミングのコードを翻訳してくれるサイトです
 
 
+{{< youtube kG_WuWnek-w >}}
