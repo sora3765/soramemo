@@ -141,3 +141,15 @@ params = ["categories", "tags"]
 [taxonomies]
  tag = "tags"
  category = "categories"
+
+[params.giscus]
+data_repo="sora3765/soramemo"
+data_repo_id="R_kgDOJS8Dxw"
+data_category="Announcements"
+data_category_id="DIC_kwDOJS8Dx84CV6Jh"
+data_mapping="pathname"
+data_reactions_enabled="1"
+data_emit_metadata="0"
+data_theme="light"
+data_lang="ja"
+crossorigin="anonymous"
