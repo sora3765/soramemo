@@ -11,6 +11,7 @@ hasCJKLanguage = true
 canonifyURLs = true
 #relativeURLs = true
 #uglyURLs = true
+plantuml = true
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
