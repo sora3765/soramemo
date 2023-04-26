@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LIFE on SORA のメモ帳</title>
-    <link>https://warm-cascaron-0c6d56.netlify.app/categories/life/</link>
-    <description>Recent content in LIFE on SORA のメモ帳</description>
+    <title>life on SORA のメモ帳</title>
+    <link>https://warm-cascaron-0c6d56.netlify.app/tags/life/</link>
+    <description>Recent content in life on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 24 Apr 2023 17:43:33 +0900</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 17:43:33 +0900</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[GGST]鰤自分メモ</title>
       <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/</link>
