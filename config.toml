@@ -17,7 +17,7 @@ plantuml = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "img/home-bg-umi.jpg"
+  header_image = "img/home-bg-tosho.png"
   SEOTitle = "SORA のメモ帳"
   description = "sora"
   keyword = "sora tec"
