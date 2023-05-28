@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="SORA のメモ帳">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/home-bg-net.png">
+    <meta property="twitter:image" content="img/home-bg-net.png" />
+    
+
+    
+    <meta name="title" content="Networkまとめ①" />
+    <meta property="og:title" content="Networkまとめ①" />
+    <meta property="twitter:title" content="Networkまとめ①" />
+    
+
+    
+    <meta name="description" content="url~OS">
+    <meta property="og:description" content="url~OS" />
+    <meta property="twitter:description" content="url~OS" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="sora tec">
+    <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon.ico">
+
+    <title>Networkまとめ① | SORA のメモ帳</title>
+
+    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-5-23-network1/">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/custom-font.css">
+
+    
+    <script src="https://warm-cascaron-0c6d56.netlify.app/js/jquery.min.js"></script>
+
+    
+    <script src="https://warm-cascaron-0c6d56.netlify.app/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://warm-cascaron-0c6d56.netlify.app/js/hux-blog.min.js"></script>
+
+    
+    <script src="https://warm-cascaron-0c6d56.netlify.app/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ598NVYB4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XZ598NVYB4', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://warm-cascaron-0c6d56.netlify.app/">SORA のメモ帳</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="https://warm-cascaron-0c6d56.netlify.app/categories/life/">life</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://warm-cascaron-0c6d56.netlify.app/categories/tech/">tech</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="https://warm-cascaron-0c6d56.netlify.app/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="https://warm-cascaron-0c6d56.netlify.app/notes//">NOTES</a></li>
+                    
+                        <li><a href="https://warm-cascaron-0c6d56.netlify.app/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home-bg-net.png')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/tech" title="tech">
+                            tech
+                        </a>
+                        
+                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/memo" title="memo">
+                            memo
+                        </a>
+                        
+                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/network" title="network">
+                            network
+                        </a>
+                        
+                    </div>
+                    <h1>Networkまとめ①</h1>
+                    <h2 class="subheading">URLからプロトコルスタックまで</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;sora&#34;
+                             
+                            on 
+                            Tuesday, May 23, 2023
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h1 id="networkまとめ">Networkまとめ①</h1>
+<hr>
+<h2 id="0章-初めに">0章 初めに</h2>
+<ul>
+<li>「ネットワークはなぜつながるのか」という本を学びながら、その他いろいろ調べたことのまとめです</li>
+<li>このサイトを見る前に上記の本をどうぞ　凄くわかりやすいです</li>
+</ul>
+<h2 id="1章-ブラウザ">1章 ブラウザ</h2>
+<h3 id="11-urlの入力">1.1 URLの入力</h3>
+<ul>
+<li>ブラウザにURLを入力する
+<ul>
+<li>URLにはプロトコルの種類が書いてある　HTTPやFTPなど</li>
+</ul>
+</li>
+<li>ブラウザはURLを解読する
+<ul>
+<li><span style="color:deepskyblue;">プロトコル//webサーバー名/ディレクトリ名/ファイル名</span>　が一般的</li>
+<li>このURLを見てHTTPプロトコルでもってWebサーバーにアクセスするのがやりたいこと</li>
+</ul>
+</li>
+<li>URLをもとにリクエストメッセージを作成する</li>
+</ul>
+<h3 id="12-リクエストメッセージ">1.2 リクエストメッセージ</h3>
+<ul>
+<li>リクエストライン
+<ul>
+<li><span style="color:deepskyblue;">メソッド　/URI  HTTPのバージョン</span>という書き方になっている</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>リクエストライン:
+</span></span><span style="display:flex;"><span>POST /index.html HTTP/1.0
+</span></span></code></pre></div><ul>
+<li>メッセージヘッダー
+<ul>
+<li>リクエストラインでは足りない情報を書き留めておく場所</li>
+<li>リクエストライン直下に記述する</li>
+<li>多数の項目が仕様として定められている</li>
+<li>空白行を挟んだ先がメッセージボディとなる</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>メッセージヘッダー：
+</span></span><span style="display:flex;"><span>Accept: image/gif, image/jpeg, */*
+</span></span><span style="display:flex;"><span>Accept-Language: ja
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 <span style="color:#ff79c6">(</span>Compatible; MSIE 6.0; Windows NT 5.1;<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>メッセージボディ：
+</span></span><span style="display:flex;"><span>〜〜〜〜〜〜〜〜〜〜
+</span></span></code></pre></div><hr>
+<h2 id="２章dns">２章　DNS</h2>
+<h3 id="21-ブラウザの役割">2.1 ブラウザの役割</h3>
+<ul>
+<li>ブラウザは解析するのみでネットワークに送信する機能は持っていない
+<ul>
+<li>OSに依頼して送ってもらう必要がある</li>
+<li>その際にドメイン名ではなくIPアドレスが必要になる</li>
+<li>ブラウザはリゾルバを使ってDNSへの問い合わせを行う</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-ipアドレスの基本">2.2 IPアドレスの基本</h3>
+<ul>
+<li>TCP/IPの考え方によって作られている</li>
+<li>サブネットと呼ばれる無数の小さなネットワークがルーターによって接続されることでネットワークが出来上がっているという感じ
+<ul>
+<li>サブネットはハブに何台かのPCが繋がっているイメージ</li>
+</ul>
+</li>
+<li>サブネットを識別するものが<span style="color:deepskyblue;">ネットワーク番号</span></li>
+<li>サブネット内でPCを識別するものが<span style="color:deepskyblue;">ホスト番号</span></li>
+<li>IPアドレスはネットワーク番号とホスト番号で構成されている
+<ul>
+<li>その境目はサブネットマスクと呼ばれるもので判断できる</li>
+<li>サブネットマスクが全て０でサブネット自体を表す</li>
+<li>サブネットマスクが全て１でブロードキャストを表す
+<ul>
+<li>ブロードキャストはサブネット内全機への送信を表す</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-ドメインとdns">2.3 ドメインとDNS</h3>
+<ul>
+<li>IPアドレスは効率が良いが覚えづらい</li>
+<li>ドメインは覚えやすいが効率が悪い</li>
+<li>なので人間はドメインを使い、ルーターはIPアドレスを使う</li>
+<li>ドメインとIPアドレスの橋渡しをしているのがDNS
+<ul>
+<li>ドメインが分かればIPが分かり、IPが分かればドメインが分かる</li>
+</ul>
+</li>
+</ul>
+<h3 id="24-dnsサーバーへの問い合わせ方法">2.4 DNSサーバーへの問い合わせ方法</h3>
+<ul>
+<li>DNSを使用してIPアドレスを調べる仕組みを<span style="color:deepskyblue;">名前解決(ネームリゾリューション)</span>という</li>
+<li>その名前解決を担当するプログラムを<span style="color:deepskyblue;">リゾルバ</span>と呼ぶ</li>
+<li>リゾルバの実態は<span style="color:deepskyblue;">Socketライブラリ</span>というライブラリで簡単に行える
+<ul>
+<li>Socketライブラリはネットワーク機能を集めた部品集</li>
+<li><code> x = gethostbyname(&quot;www.aaa.com&quot;)</code>のようにして問い合わせる</li>
+</ul>
+</li>
+<li><span style="color:deepskyblue;">ブラウザはSocketライブラリを利用して名前解決を行う</span></li>
+</ul>
+<h3 id="25-リゾルバの動き">2.5 リゾルバの動き</h3>
+<ul>
+<li>ブラウザがリゾルバを動かすと制御がリゾルバへ移る
+<ul>
+<li>その間ブラウザには待ってもらう</li>
+</ul>
+</li>
+<li>リゾルバはDNSサーバーへの問い合わせメッセージを作成する</li>
+<li><span style="color:deepskyblue;">その問い合わせメッセージをプロトコルスタックへ依頼して送信動作を行う</span>
+<ul>
+<li>プロトコルスタックはOS内部に組み込まれている制御用ソフトウェア</li>
+<li>別名「プロトコルドライバ」「TCP/IP
+ソフト」</li>
+</ul>
+</li>
+<li>送信動作が完了し、DNSから送られてきたものをプロトコルスタックを経由して受け取り、リゾルバが解読して、指定してある場所にIPアドレスを格納する</li>
+<li>DNSサーバーのIPアドレスが必要だがTCP/IPの設定で事前に定められている</li>
+</ul>
+<h3 id="26-dnsサーバーの仕組み">2.6 DNSサーバーの仕組み</h3>
+<ul>
+<li>基本的な流れは、クライアントから問い合わせを受け取り、情報を回答する</li>
+<li>問い合わせには<span style="color:deepskyblue;">名前、クラス、タイプ</span>の３種類が含まれている
+<ul>
+<li>名前は.comなどのサーバー名など</li>
+<li>クラスはインターネットを表すIN以外は現在では使われない</li>
+<li>タイプは名前に対応している返答項目がどのような種類かが書かれる
+<ul>
+<li>IPアドレスなら「A」メールなら「MX」など</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DNSには関連づけられた表が用意されていて、該当する返答項目を送り返す
+<ul>
+<li>１件分をソースレコードと言い、それが集まって表になっている</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>名前　　　　　　　クラス タイプ 返答項目
+</span></span><span style="display:flex;"><span>www.aaa.co.jp  IN    A     192.168.1.27
+</span></span><span style="display:flex;"><span>aaa.com        IN    MX    <span style="color:#bd93f9">1</span> mail.aaa.com
+</span></span><span style="display:flex;"><span>mail.aaa.com   IN    A     192.168.1.28
+</span></span></code></pre></div><h3 id="27-ドメイン">2.7 ドメイン</h3>
+<ul>
+<li>１台のDNSに全て登録することは不可能なのでドメインという<span style="color:deepskyblue;">階層構造</span>をとっている
+<ul>
+<li>一番最上位にルートドメインが存在し、その下にjpやcomなどのDNSが、さらにその下にcoがという感じ</li>
+<li>下位のDNSの情報をその上位のDNSが持ち、その上位のDNSの情報を&hellip;という感じで最後にはルートドメインにたどり着く</li>
+<li>そうすることで<span style="color:deepskyblue;">全てのレコードをルートドメインにアクセスするだけで辿ることが出来る</span></li>
+<li>また、全てのDNSにルートドメインのIPを登録しておくことでどこかのDNSサーバーにアクセスすればルートドメインを経由して辿り着くことが出来る</li>
+</ul>
+</li>
+<li>問い合わせを受けたDNSサーバーはこのようにIPアドレスを調べ、クライアントへ回答する</li>
+<li>現実のDNSは上位と下位のDNSサーバーが登録されているケースもあるため、毎回一つづつ辿っていくわけではない</li>
+</ul>
+<h3 id="28-dnsキャッシュ">2.8 DNSキャッシュ</h3>
+<ul>
+<li>DNSサーバーには一度調べた名前をキャッシュとして保存しておく機能がある
+<ul>
+<li>これにより、過去に問い合わせがあったものに即座に回答することが出来る</li>
+<li>存在しないという回答も保存が出来る</li>
+</ul>
+</li>
+<li>時間が経つと登録情報が変更されている場合もあるので、<span style="color:deepskyblue;">一定期間で削除</span>されるように設定されている</li>
+</ul>
+<hr>
+<h2 id="3章-プロトコルスタック">3章 プロトコルスタック</h2>
+<h3 id="31-データの送受信の概要">3.1 データの送受信の概要</h3>
+<ul>
+<li>リゾルバによってサーバーのIPアドレスを手に入れたら、その相手に対してメッセージを送信するために、<span style="color:deepskyblue;">Socketライブラリを介してプロトコルスタックへ依頼する</span></li>
+<li>Socketライブラリを用いたデータ送受信は自分と相手間でパイプを繋ぐイメージ
+<ul>
+<li>このパイプの中にデータを入れると相手に届く双方向の通り道</li>
+</ul>
+</li>
+<li>このパイプを作る動作、繋がったパイプにデータを流す操作、終了時にパイプを外す動作が大まかな流れになる</li>
+</ul>
+<h3 id="32-ソケットと通信動作">3.2 ソケットと通信動作</h3>
+<ul>
+<li>パイプで繋いだ時の出入り口を<span style="color:deepskyblue;">ソケット</span>と呼ぶ</li>
+<li>サーバー側でソケットが作られ、クライアント側がそのソケットにパイプを繋げにいくイメージ</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ざっくりとした通信動作
+</span></span><span style="display:flex;"><span>1. Socketライブラリのsocketを呼び出し、ソケットを作成
+</span></span><span style="display:flex;"><span>2. ディスクリプタと呼ばれるソケット識別番号が帰ってくるのでメモリに記録
+</span></span><span style="display:flex;"><span>3. Socketライブラリのconnectを呼び出し、「ディスクリプタ」「サーバーIPアドレス」「ポート番号」を指定してプロトコルスタックへ接続を依頼する
+</span></span><span style="display:flex;"><span>//パイプ接続完了
+</span></span><span style="display:flex;"><span>4. アプリはソケットに触れないので都度Socketライブラリのwriteへ依頼する
+</span></span><span style="display:flex;"><span>5. 返答をSocketライブラリのreadが受け取って受信バッファへ格納する
+</span></span><span style="display:flex;"><span>6. Socketライブラリのcloseで切断フェーズを依頼する
+</span></span><span style="display:flex;"><span>//通信終了
+</span></span></code></pre></div><h3 id="33-プロトコルスタックとは">3.3 プロトコルスタックとは</h3>
+<ul>
+<li>OS内部に組み込まれている制御用ソフトウェアでSocketライブラリにより操作される事が多い</li>
+<li>プロトコルスタックには様々な部品で構成されている
+<ul>
+<li>TCPプロトコルによる送受信</li>
+<li>UDPプロトコルによる送受信</li>
+<li>IPプロトコルによる通信制御
+<ul>
+<li>ICMPによるエラー制御</li>
+<li>ARPによるMACアドレス検索</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>プロトコルスタックはLANドライバへ依頼をし、LANドライバがLANアダプタを用いて送受信を行う</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>//上から下へ依頼する
+</span></span><span style="display:flex;"><span>上位
+</span></span><span style="display:flex;"><span>｜　　　　WEBブラウザ
+</span></span><span style="display:flex;"><span>｜　　　　Socketライブラリ
+</span></span><span style="display:flex;"><span>｜　　　　プロトコルスタック（TCP、UDP、IP）
+</span></span><span style="display:flex;"><span>｜　　　　LANドライバ
+</span></span><span style="display:flex;"><span>｜　　　　LANアダプタ
+</span></span><span style="display:flex;"><span>下位
+</span></span></code></pre></div><ul>
+<li>プロトコルスタックは内部にメモリ領域があり、そこに様々な制御情報が記載されている
+<ul>
+<li>通信相手のアドレスやポート番号、通信の状況などなど</li>
+<li>この情報がソケットの実態と言える</li>
+<li>ソケットはWindowsの場合、<code>$ netstat -ano</code>コマンドで確認できる</li>
+</ul>
+</li>
+<li>プロトコルスタックはそこに<span style="color:deepskyblue;">保存された情報を元に様々な通信動作を行なっている</span></li>
+</ul>
+<h3 id="34-サーバーへの接続に必要なこと">3.4 サーバーへの接続に必要なこと</h3>
+<ul>
+<li>connectに必要な情報をプロトコルスタックへ渡す</li>
+<li>相手方にも自分のアドレスやポート番号を知ってもらう</li>
+<li>送受信するデータを一時的に保存しておく場所の確保
+<ul>
+<li>バッファメモリと呼ぶ</li>
+</ul>
+</li>
+<li>上記の三つが必要なほか、二つの制御情報が必要となる
+<ul>
+<li>ヘッダーに書き込まれる情報
+<ul>
+<li>TCPヘッダーと呼ばれ、TCPプロトコルの仕様によって決められている</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="35-実際の接続流れ">3.5 実際の接続流れ</h3>
+<ul>
+<li>アプリケーションがSocketライブラリのconnectが呼び出される</li>
+<li>プロトコルスタックのTCP部分に伝わり、<span style="color:deepskyblue;">データ送受信開始のヘッダーを作成する</span>
+<ul>
+<li>ポイントはお互いのポート番号</li>
+<li>コントロールビットのSYNを１にする</li>
+</ul>
+</li>
+<li>IP担当へ渡して送信の依頼をする</li>
+<li>ネットワーク内を通ってサーバーへ届く</li>
+<li>サーバーのIP部分が受け取り、TCP部分へ渡す
+<ul>
+<li>IPヘッダを確認し、自分宛か分割されているか、TCPなのかなどをチェックする</li>
+</ul>
+</li>
+<li><span style="color:deepskyblue;">TCP部分がTCPヘッダを調べ、該当するソケットを探し出す(コピーする)</span></li>
+<li>該当ソケットに必要情報を記録する
+<ul>
+<li>必要情報は送信元IPやポート番号など</li>
+</ul>
+</li>
+<li>コントロールビットのACKを１にしたTCPヘッダーを作り、IP部分に頼んで<span style="color:deepskyblue;">送り返す</span></li>
+<li>クライアント側が受け取ったら、<span style="color:deepskyblue;">ソケットに相手の情報を記録</span>し、サーバーへACKビットを１にしたものを送り返す</li>
+<li>届いたら<span style="color:deepskyblue;">接続動作終了</span></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>TCPヘッダ詳細
+</span></span><span style="display:flex;"><span>送信元ポート＆宛先ポート　　：ポート番号
+</span></span><span style="display:flex;"><span>シーケンス番号　　　　　　　：分割時に送信データの何バイト目か
+</span></span><span style="display:flex;"><span>確認応答番号<span style="color:#ff79c6">(</span>ACK<span style="color:#ff79c6">)</span>　　　　　：相手から来たシーケンス番号＋データサイズ
+</span></span><span style="display:flex;"><span>コントロールビット　　　　　：１を入れてフラグ管理をする
+</span></span><span style="display:flex;"><span>　　　　　　　　　　　　　　：ACK:確認応答番号が有効＆正しく届いたかの確認
+</span></span><span style="display:flex;"><span>　　　　　　　　　　　　　　：SYN:シーケンス番号があるよの確認など
+</span></span><span style="display:flex;"><span>ウインドウサイズ　　　　　　：受信側が一度に受け取れる最大数を通知する
+</span></span></code></pre></div><h3 id="36-データの送受信概要">3.6 データの送受信概要</h3>
+<ul>
+<li>アプリがwriteを呼び出し、プロトコルスタックが受け取る
+<ul>
+<li>プロトコルスタックは<span style="color:deepskyblue;">中身を関知しない</span></li>
+<li>writeにはデータの長さが必要</li>
+</ul>
+</li>
+<li>プロトコルスタックが<span style="color:deepskyblue;">長さをチェックする</span>
+<ul>
+<li>MTUパラメータを元にそこからヘッダーを引いたMSSで判断する</li>
+<li>MTU:１パケットの最大　　　MSS：MTU ー(マイナス) ヘッダー</li>
+</ul>
+</li>
+<li><span style="color:deepskyblue;">長い場合は分割して送信</span>、短い場合は貯めておいて いっぱいになるOR一定時間で送信する
+<ul>
+<li>TCPには一定時間などの規定が無く、プロトコルスタックに任されている</li>
+<li>アプリ側からも貯めないなどの指定ができる</li>
+</ul>
+</li>
+<li>相手に届いていたらACK番号が返ってくる　来なければ送り返す</li>
+</ul>
+<h3 id="37-パケットの分割と応答確認">3.7 パケットの分割と応答確認</h3>
+<ul>
+<li>開始時に通知されたシーケンス番号を、分割したものに着けて送る</li>
+<li><span style="color:deepskyblue;">確認応答番号が返ってくるので、それをシーケンス番号として次のものを送る</span>
+<ul>
+<li>確認応答番号が返ってこなかった場合は再度送り返す</li>
+</ul>
+</li>
+<li>この流れを双方で行い、常に届いたかを確認し合いながら通信する
+<ul>
+<li>これにより、<span style="color:deepskyblue;">他の地点で送信成功の確認をする必要がなくなる</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="38-ウインドウ制御方式">3.8 ウインドウ制御方式</h3>
+<ul>
+<li>ACKが返って来るまで待っていたのでは時間がかかるので、どんどん送ってしまおうというのが<span style="color:deepskyblue;">ウインドウ制御方式</span></li>
+<li>ただ、受け取ったデータの処理が終わらないうちに受け取ってしまうと、いつかメモリが溢れてしまう</li>
+<li>そこでTCPヘッダのウインドウ欄で受信バッファの空きを知らせ、<span style="color:deepskyblue;">溢れを防ぐ</span>
+<ul>
+<li>ウインドウ通知単体で送ってしまうと大変なので、<span style="color:deepskyblue;">ACK通知を少し待ってもらい、そこに相乗りさせてもらう</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="39-相手との切断動作">3.9 相手との切断動作</h3>
+<ul>
+<li>どちらから切断に入るかはアプリ次第</li>
+<li>サーバー側からの場合はサーバー側のアプリケーションがSocketのcloseを呼び出す</li>
+<li>その後、サーバーのプロトコルスタックがFINに１をセットしたTCPヘッダを作り、IPに送信してもらう</li>
+<li>クライアント側でFIN１が届いたら、ACK番号をサーバーへ送り返し、クライアントのreadに合わせてその旨を伝える</li>
+<li>クライアント側もcloseを実行し、通信終了</li>
+<li>その後、しばらく待ってからソケットを削除する
+<ul>
+<li>最後のACKが届かなかった場合の保険</li>
+</ul>
+</li>
+</ul>
+<h3 id="参考にさせていただいた文献">参考にさせていただいた文献</h3>
+<blockquote>
+<p><a href="https://bookplus.nikkei.com/atcl/catalog/07/P83110/">https://bookplus.nikkei.com/atcl/catalog/07/P83110/</a><br>
+<a href="https://ja.wikipedia.org/wiki/Domain_Name_System">https://ja.wikipedia.org/wiki/Domain_Name_System</a><br>
+<a href="https://www.infraexpert.com/study/tcpip8.html">https://www.infraexpert.com/study/tcpip8.html</a><br>
+<a href="https://wa3.i-3-i.info/word12209.html">https://wa3.i-3-i.info/word12209.html</a></p>
+</blockquote>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/" data-toggle="tooltip" data-placement="top" title="[GGST]鰤自分メモ">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+                
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="sora3765/soramemo"
+        data-repo-id="R_kgDOJS8Dxw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJS8Dx84CV6Jh"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="ja"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="https://warm-cascaron-0c6d56.netlify.app/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/tags/memo" title="memo">
+                            memo
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/tags/tech" title="tech">
+                            tech
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:hnksb640@yahoo.co.jp">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/sora3765">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="SORA のメモ帳" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; SORA のメモ帳 2023
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
