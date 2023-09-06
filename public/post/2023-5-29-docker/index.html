@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="viの覚え書きまとめ" />
-    <meta property="og:title" content="viの覚え書きまとめ" />
-    <meta property="twitter:title" content="viの覚え書きまとめ" />
+    <meta name="title" content="Dockerまとめ" />
+    <meta property="og:title" content="Dockerまとめ" />
+    <meta property="twitter:title" content="Dockerまとめ" />
     
 
     
-    <meta name="description" content="viの基本">
-    <meta property="og:description" content="viの基本" />
-    <meta property="twitter:description" content="viの基本" />
+    <meta name="description" content="Dockerとは">
+    <meta property="og:description" content="Dockerとは" />
+    <meta property="twitter:description" content="Dockerとは" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="sora tec">
     <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon.ico">
 
-    <title>viの覚え書きまとめ | SORA のメモ帳</title>
+    <title>Dockerまとめ | SORA のメモ帳</title>
 
-    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-20-vihelp/">
+    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/">
 
     
     
@@ -195,9 +195,13 @@ if (!doNotTrack) {
                             memo
                         </a>
                         
+                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/docker" title="docker">
+                            docker
+                        </a>
+                        
                     </div>
-                    <h1>viの覚え書きまとめ</h1>
-                    <h2 class="subheading">記憶の整理もかねて</h2>
+                    <h1>Dockerまとめ</h1>
+                    <h2 class="subheading">Dockerメモ</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -205,7 +209,7 @@ if (!doNotTrack) {
                                      &#34;sora&#34;
                              
                             on 
-                            Thursday, April 20, 2023
+                            Monday, May 29, 2023
                             
                             
                             
@@ -231,174 +235,141 @@ if (!doNotTrack) {
                 post-container">
 
                 
-                <h1 id="viの基本">「viの基本」</h1>
+                <h1 id="dockerまとめ">Dockerまとめ</h1>
 <hr>
-<h3 id="基本知識">基本知識</h3>
+<h2 id="０章-初めに">０章 初めに</h2>
 <ul>
-<li>viはテキストエディタでCUIでも利用出来る</li>
-<li>オペレーター操作やリピートによる繰り返しなど便利な機能がある</li>
-<li>GUIによる操作が出来ない</li>
-<li>モードが４つに分かれており、ノーマルモードを介してそれぞれのモードへ入る</li>
+<li>Dockerを学習した際のメモ帳です</li>
 </ul>
-<h3 id="カーソルの移動">カーソルの移動</h3>
-<table>
-<thead>
-<tr>
-<th>動作</th>
-<th>キー</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>左</td>
-<td>h</td>
-</tr>
-<tr>
-<td>右</td>
-<td>j</td>
-</tr>
-<tr>
-<td>上</td>
-<td>k</td>
-</tr>
-<tr>
-<td>下</td>
-<td>l</td>
-</tr>
-</tbody>
-</table>
-<h1 id="モードについて">「モードについて」</h1>
-<hr>
-<h3 id="ノーマルモード">ノーマルモード</h3>
+<h2 id="１章-dockerとは">１章 Dockerとは</h2>
+<h3 id="11-docker概要">1.1 Docker概要</h3>
 <ul>
-<li>テキスト編集に特化した機能がたくさんある</li>
-</ul>
-<h4 id="カウント">カウント</h4>
+<li>
+<p>コンテナ仮想化技術を利用したアプリケーションの実行環境を構築出来る</p>
+</li>
+<li>
+<p>コンテナはオーバーヘッドが少ないので軽量で高速な動作が可能</p>
+</li>
+<li>
+<p>Dockerイメージを元にコンテナを作成する</p>
+</li>
+<li>
+<p>作成されたコンテナには色々な要素がある</p>
 <ul>
-<li>yやpなどのコマンドを指定した回数分を繰り返し実行するコマンド</li>
-<li>3yならyyyと同じになる</li>
+<li>アプリの実行モジュール、ミドルウェア、ライブラリ、OSネットワークなどのインフラ</li>
 </ul>
-<h4 id="モーション">モーション</h4>
+</li>
+<li>
+<p>そのコンテナをDockerHubなどで共有することで様々な環境で動かすことが可能</p>
+</li>
+</ul>
+<h3 id="12-dockerの機能">1.2 Dockerの機能</h3>
 <ul>
-<li>カーソル移動コマンド</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>モーション</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0(ゼロ)</td>
-<td>行頭へ移動</td>
-</tr>
-<tr>
-<td>$</td>
-<td>行末へ移動</td>
-</tr>
-<tr>
-<td>gg</td>
-<td>ファイルの先頭へ</td>
-</tr>
-<tr>
-<td>G</td>
-<td></td>
-</tr>
-<tr>
-<td>{count}G</td>
-<td>指定した行へ</td>
-</tr>
-</tbody>
-</table>
-<h4 id="オペレーター">オペレーター</h4>
+<li>Dockerには三つの機能がある
 <ul>
-<li>操作のコマンド</li>
-<li>カウントとモーションコマンドと組み合わせることができる</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>オペレーター</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>y</td>
-<td>ヤンク</td>
-</tr>
-<tr>
-<td>d</td>
-<td>削除</td>
-</tr>
-<tr>
-<td>c</td>
-<td>変更（削除後挿入モードに）</td>
-</tr>
-</tbody>
-</table>
-<h4 id="テキストオブジェクト">テキストオブジェクト</h4>
+<li>Dockerのイメージを作るBuild
 <ul>
-<li>テキストを一つの意味のあるまとまりとして扱うことができる</li>
+<li>Dockerのコマンドで作成する方法とDockerfileという設定ファイルを元に自動で作成する方法がある</li>
+<li>Dockerイメージは重ねて使う事ができ、重ねて別のイメージを作成できる</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>テキストオブジェクト</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>iw</td>
-<td>ホワイトスペースを含まないwordを選択</td>
-</tr>
-<tr>
-<td>aw</td>
-<td>ホワイトスペースを含むwordを選択</td>
-</tr>
-<tr>
-<td>ip</td>
-<td>段落の内部を選択</td>
-</tr>
-<tr>
-<td>ap</td>
-<td>段落を選択</td>
-</tr>
-</tbody>
-</table>
-<h4 id="その他">その他</h4>
+</li>
+<li>Dockerイメージを共有するShip
 <ul>
-<li>色々あるけど<code>help</code>コマンドで調べよう</li>
+<li>イメージはDockerレジストリで共有でき、DockerHubでは様々なOSイメージが公開されている他、個人が共有することも可能</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>コマンド</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>u</td>
-<td>[count]個の変更を元に戻す（undo）</td>
-</tr>
-<tr>
-<td>Ctrl-r</td>
-<td>undoされた変更を[count]個やり直す（redo）</td>
-</tr>
-<tr>
-<td>Ctrl-u</td>
-<td>画面半分上にスクロール</td>
-</tr>
-<tr>
-<td>Ctrl-d</td>
-<td>画面半分下にスクロール</td>
-</tr>
-</tbody>
-</table>
+</li>
+<li>Dockerコンテナを動かす機能Run
+<ul>
+<li>Dockerはコンテナ単位でサーバー機能を動かす</li>
+<li>Docker環境さえあればどこでもコンテナを動かすことが出来る</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="２章-dockerの基本操作">２章 Dockerの基本操作</h2>
+<h3 id="21-dockerイメージのダウンロード">2.1 Dockerイメージのダウンロード</h3>
+<ul>
+<li>DockerHubから取得する場合<code>docker image pull [オプション名] イメージ名[:タグ名]</code>
+<ul>
+<li>docker image pull centos:7</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-イメージの一覧表示">2.2 イメージの一覧表示</h3>
+<ul>
+<li>取得したイメージを一覧表示する場合<code>docker image ls [オプション] [レポジトリ名]</code></li>
+</ul>
+<pre tabindex="0"><code class="language-bash:option" data-lang="bash:option">オプション       内容
+-all,-a        全件表示
+--digests      ダイジェスト表示
+--no-trunc     結果の全表示
+--puiet,-p     IDのみ表示
+</code></pre><h3 id="23-イメージの削除">2.3 イメージの削除</h3>
+<ul>
+<li>作成したイメージを削除する場合<code>docker image rm [オプション] イメージ名 [イメージ名]</code></li>
+</ul>
+<pre tabindex="0"><code class="language-bash:option" data-lang="bash:option">オプション       内容
+--force,-f     強制的な削除
+--no-prun      中間イメージを作成しない
+</code></pre><h2 id="3章-dockerコンテナのサイクル">3章 Dockerコンテナのサイクル</h2>
+<h3 id="31-生成起動">3.1 生成起動</h3>
+<ul>
+<li>Dockerコンテナの生成起動は<code>docker container run [オプション] イメージ名[:タグ名] [引数]</code></li>
+</ul>
+<pre tabindex="0"><code class="language-bash:option" data-lang="bash:option">オプション       　　内容
+-attach,-a     　　コンテナのシェルに接続する
+--detach,-d    　　コンテナを生成してバックグラウンドで実行する
+--name [コンテナ名] 結果の全表示
+</code></pre><ul>
+<li>ネットワークの設定を行うためには<code>$ docker container run [ネットワークオプション] イメージ名[:タグ名] [引数]</code>
+<ul>
+<li><code>docker container run -d -p 8080:80 apache</code>で8080にアクセスするとapache80番ポートへアクセスできる</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-停止">3.2 停止</h3>
+<ul>
+<li>起動しているコンテナを停止するには<code>docker container stop [オプション] コンテナ識別子 [コンテナ識別子]</code></li>
+</ul>
+<h3 id="33-削除">3.3 削除</h3>
+<ul>
+<li>コンテナを削除するには<code>$ docker container rm [オプション] コンテナ識別子 [コンテナ識別子]</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>オプション       　　内容
+</span></span><span style="display:flex;"><span>--force,-f     　　強制的に削除
+</span></span><span style="display:flex;"><span>--volumes,-v     　割り当てたボリュームを削除
+</span></span></code></pre></div><h2 id="4章-dockerの作成">4章 Dockerの作成</h2>
+<h3 id="41-dockerfile">4.1 Dockerfile</h3>
+<ul>
+<li>Dockerfileを使うと様々な設定やコマンドなどを追加出来る</li>
+<li>Dockerfileには拡張子はいらない</li>
+<li>記述方法は<code>命令 因数</code>と書く
+<ul>
+<li>(例)<code>From centos:centos7</code></li>
+</ul>
+</li>
+<li>実行する際は<code>docker build -t [生成するイメージ名]:[タグ名] [Dockerfileの場所]</code>
+<ul>
+<li><code>docker build -t sample:var1.0 ./</code></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>命令         説明
+</span></span><span style="display:flex;"><span>FROM        環境のベースは何か
+</span></span><span style="display:flex;"><span>RUN         実行したいコマンド
+</span></span><span style="display:flex;"><span>CMD         コンテナが実行される際に動くコマンド
+</span></span><span style="display:flex;"><span>WORKDIR     これ以下が操作するディレクトリの絶対パス
+</span></span><span style="display:flex;"><span>ENV         環境変数の設定
+</span></span></code></pre></div><h3 id="42-dockercompose">4.2 DockerCompose</h3>
+<ul>
+<li>いくつかのコンテナ同士を連携させて動作させることが出来る</li>
+<li>それをDockerComposeと言い、docker-compose.ymlというファイルで管理することが出来る
+<ul>
+<li>この定義ファイルを元に<code>docker-compose</code>コマンドを実行することで同一ホスト上のコンテナをまとめて操作出来る</li>
+</ul>
+</li>
+</ul>
 
 
                 
@@ -408,13 +379,13 @@ if (!doNotTrack) {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/" data-toggle="tooltip" data-placement="top" title="gitの覚え書きまとめ">&larr;
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-5-23-network1/" data-toggle="tooltip" data-placement="top" title="Networkまとめ①">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/" data-toggle="tooltip" data-placement="top" title="[GGST]鰤自分メモ">Next
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/" data-toggle="tooltip" data-placement="top" title="Hugoコマンドメモ">Next
                             Post &rarr;</a>
                     </li>
                     

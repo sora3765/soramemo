@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on SORA のメモ帳</title>
+    <link>https://warm-cascaron-0c6d56.netlify.app/tags/hugo/</link>
+    <description>Recent content in hugo on SORA のメモ帳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoコマンドメモ</title>
+      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/</guid>
+      <description>Hugoコマンドメモ 前振り 毎回使うたびにHugoのコマンドを調べているので、自分のためにもまとめました HugoはGoで記述された静的サイトジ</description>
+    </item>
+    
+  </channel>
+</rss>
