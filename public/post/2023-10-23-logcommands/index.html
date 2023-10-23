@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="Hugoコマンドメモ" />
-    <meta property="og:title" content="Hugoコマンドメモ" />
-    <meta property="twitter:title" content="Hugoコマンドメモ" />
+    <meta name="title" content="ログコマンド" />
+    <meta property="og:title" content="ログコマンド" />
+    <meta property="twitter:title" content="ログコマンド" />
     
 
     
-    <meta name="description" content="よく使うコマンド">
-    <meta property="og:description" content="よく使うコマンド" />
-    <meta property="twitter:description" content="よく使うコマンド" />
+    <meta name="description" content="Linux調査用コマンド">
+    <meta property="og:description" content="Linux調査用コマンド" />
+    <meta property="twitter:description" content="Linux調査用コマンド" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="sora tec">
     <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon.ico">
 
-    <title>Hugoコマンドメモ | SORA のメモ帳</title>
+    <title>ログコマンド | SORA のメモ帳</title>
 
-    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/">
+    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-23-logcommands/">
 
     
     
@@ -195,13 +195,9 @@ if (!doNotTrack) {
                             memo
                         </a>
                         
-                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/hugo" title="hugo">
-                            hugo
-                        </a>
-                        
                     </div>
-                    <h1>Hugoコマンドメモ</h1>
-                    <h2 class="subheading">よく使うコマンド</h2>
+                    <h1>ログコマンド</h1>
+                    <h2 class="subheading">Linux調査用コマンド</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -209,7 +205,7 @@ if (!doNotTrack) {
                                      &#34;sora&#34;
                              
                             on 
-                            Wednesday, September 6, 2023
+                            Monday, October 23, 2023
                             
                             
                             
@@ -235,70 +231,106 @@ if (!doNotTrack) {
                 post-container">
 
                 
-                <h1 id="hugoコマンドメモ">Hugoコマンドメモ</h1>
-<h2 id="前振り">前振り</h2>
+                <h1 id="各種ログ調査コマンド">各種ログ調査コマンド</h1>
+<h2 id="アクセスログファイル場所の確認">アクセスログファイル場所の確認</h2>
 <ul>
-<li>毎回使うたびにHugoのコマンドを調べているので、自分のためにもまとめました
+<li><code>httpd -S</code>でApacheのルートを見つける</li>
+<li><code>grep CustomLog  /etc/httpd/conf*/*</code>でCustomLogの記述を見つける</li>
+</ul>
+<h2 id="ログサンプル">ログサンプル</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># アクセスログ</span>
+</span></span><span style="display:flex;"><span>110.15.201.15 - - <span style="color:#ff79c6">[</span>07/Jun/2021:15:16:25 +0900<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET /bulletins HTTP/1.1&#34;</span> <span style="color:#bd93f9">504</span> <span style="color:#bd93f9">9345</span> <span style="color:#f1fa8c">&#34;-&#34;</span> <span style="color:#f1fa8c">&#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#34;</span>
+</span></span><span style="display:flex;"><span>110.15.201.15 - - <span style="color:#ff79c6">[</span>07/Jun/2021:15:17:17 +0900<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET /bulletins HTTP/1.1&#34;</span> <span style="color:#bd93f9">504</span> <span style="color:#bd93f9">9345</span> <span style="color:#f1fa8c">&#34;-&#34;</span> <span style="color:#f1fa8c">&#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#34;</span>
+</span></span><span style="display:flex;"><span>127.0.0.1 - - <span style="color:#ff79c6">[</span>07/Jun/2021:15:17:35 +0900<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET / HTTP/1.0&#34;</span> <span style="color:#bd93f9">200</span> <span style="color:#bd93f9">11150</span> <span style="color:#f1fa8c">&#34;-&#34;</span> <span style="color:#f1fa8c">&#34;check_http/v2.3.3&#34;</span>
+</span></span><span style="display:flex;"><span>127.0.0.1 - - <span style="color:#ff79c6">[</span>07/Jun/2021:15:19:35 +0900<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET / HTTP/1.0&#34;</span> <span style="color:#bd93f9">200</span> <span style="color:#bd93f9">11150</span> <span style="color:#f1fa8c">&#34;-&#34;</span> <span style="color:#f1fa8c">&#34;check_http/v2.3.3&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># スロークエリログ</span>
+</span></span><span style="display:flex;"><span>/usr/sbin/mysqld, Version: 8.0.23 <span style="color:#ff79c6">(</span>MySQL Community Server - GPL<span style="color:#ff79c6">)</span>. started with:
+</span></span><span style="display:flex;"><span>Tcp port: <span style="color:#bd93f9">3306</span>  Unix socket: /var/lib/mysql/mysql.sock
+</span></span><span style="display:flex;"><span>Time                 Id Command    Argument
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Time: 2021-05-24T08:12:56.241844Z</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># User@Host: wp-user[wp-user] @  [192.168.0.229]  Id:   289</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Query_time: 10.003509  Lock_time: 0.000085 Rows_sent: 0  Rows_examined: 1</span>
+</span></span><span style="display:flex;"><span>use trng_webdb01;
+</span></span><span style="display:flex;"><span>SET <span style="color:#8be9fd;font-style:italic">timestamp</span><span style="color:#ff79c6">=</span>1621843966;
+</span></span><span style="display:flex;"><span>UPDATE <span style="color:#f1fa8c">`</span>wp_options<span style="color:#f1fa8c">`</span> SET <span style="color:#f1fa8c">`</span>option_value<span style="color:#f1fa8c">`</span> <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;1621843966.2317020893096923828125&#39;</span> WHERE <span style="color:#f1fa8c">`</span>option_name<span style="color:#f1fa8c">`</span> <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;_transient_doing_cron&#39;</span>;
+</span></span><span style="display:flex;"><span>/usr/sbin/mysqld, Version: 8.0.23 <span style="color:#ff79c6">(</span>MySQL Community Server - GPL<span style="color:#ff79c6">)</span>. started with:
+</span></span><span style="display:flex;"><span>Tcp port: <span style="color:#bd93f9">3306</span>  Unix socket: /var/lib/mysql/mysql.sock
+</span></span><span style="display:flex;"><span>Time                 Id Command    Argument
+</span></span><span style="display:flex;"><span>/usr/sbin/mysqld, Version: 8.0.23 <span style="color:#ff79c6">(</span>MySQL Community Server - GPL<span style="color:#ff79c6">)</span>. started with:
+</span></span><span style="display:flex;"><span>Tcp port: <span style="color:#bd93f9">3306</span>  Unix socket: /var/lib/mysql/mysql.sock
+</span></span><span style="display:flex;"><span>Time                 Id Command    Argument
+</span></span></code></pre></div><h2 id="アクセスログ集計">アクセスログ集計</h2>
+<h3 id="1分間隔で集計">1分間隔で集計</h3>
 <ul>
-<li>HugoはGoで記述された静的サイトジェネレーターです</li>
+<li><code>ionice -c2 -n7 nice -n19 cat /var/log/httpd/access_log |awk -F\[ '{print $2}' | cut -c2-17 | sort | uniq -c</code></li>
 </ul>
-</li>
-</ul>
-<h2 id="サイトの作成">サイトの作成</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">3</span> 7/Jun/2021:10:01
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span> 7/Jun/2021:10:03
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span> 7/Jun/2021:10:05
+</span></span></code></pre></div><h3 id="１０分間隔で集計">１０分間隔で集計</h3>
 <ul>
-<li><code>hugo new site サイト名</code>で、実行したディレクトリに作成されます</li>
-<li>コンテンツやテーマが含まれないテンプレートが作成されます</li>
-<li>テンプレートを使う事が多いのであまり使用しないかも？
+<li><code>ionice -c2 -n7 nice -n19 cat /var/log/httpd/access_log | awk -F\[ '{print $2}' | cut -c2-16 | sort | uniq -c</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">7</span> 7/Jun/2021:10:0
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span> 7/Jun/2021:10:1
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">5</span> 7/Jun/2021:10:2
+</span></span></code></pre></div><h3 id="アクセス元ipを集計">アクセス元IPを集計</h3>
 <ul>
-<li>テンプレートは<a href="https://themes.gohugo.io/">ここから</a></li>
+<li><code>ionice -c2 -n7 nice -n19 cat access_log.txt | awk '{print $1}'|sort | uniq -c</code></li>
 </ul>
-</li>
-<li><a href="https://gohugo.io/commands/hugo_new_site/">https://gohugo.io/commands/hugo_new_site/</a></li>
-</ul>
-<h2 id="記事の作成">記事の作成</h2>
-<ul>
-<li><code>hugo new ファイル名.md</code>で記事を作成出来ます</li>
-<li>記事はデフォルトでcontentフォルダに作成されます
-<ul>
-<li>content内でファイルを分けたい場合は<code>file/ファイル名.md</code>で作成出来ます
-<ul>
-<li>フォルダは自動作成されます</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo new post/2023-9-6-hugoCommands.md
-</span></span><span style="display:flex;"><span>Content <span style="color:#f1fa8c">&#34;/Users/.../soramemo/soramemo/content/post/2023-9-6-hugoCommands.md&#34;</span> created
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">3</span> 110.15.201.15
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">242</span> 127.0.0.1
 </span></span></code></pre></div><ul>
-<li><a href="https://gohugo.io/commands/hugo_new/">https://gohugo.io/commands/hugo_new/</a></li>
+<li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk '{print $1}' | sort | uniq -c</code></li>
 </ul>
-<h2 id="サイトのプレビュー">サイトのプレビュー</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> 127.0.0.1
+</span></span></code></pre></div><h3 id="アクセス先uriを集計">アクセス先URIを集計</h3>
 <ul>
-<li><code>hugo server</code>でlocalhost上で確認を行いながら記事を書く事が出来ます</li>
-<li>サイトはデフォルトで<a href="http://localhost:1313/">http://localhost:1313/</a>で確認が出来ます</li>
-<li>文書を保存するたびに変更が反映されます</li>
-<li>オプションなどは公式ドキュメントで確認を</li>
-<li><a href="https://gohugo.io/commands/hugo_server/">https://gohugo.io/commands/hugo_server/</a></li>
+<li><code>ionice -c2 -n7 nice -n19 cat access_log.txt | awk -F\&quot; '{print $2}'  |sort | uniq -c</code></li>
 </ul>
-<h2 id="記事からhtmlの作成">記事からHTMLの作成</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">242</span> GET / HTTP/1.0
+</span></span><span style="display:flex;"><span>  <span style="color:#bd93f9">3</span> GET /bulletins HTTP/1.1
+</span></span></code></pre></div><ul>
+<li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk -F\&quot; '{print $2}'  |sort | uniq -c</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> GET / HTTP/1.0
+</span></span></code></pre></div><h3 id="リファラーを集計">リファラーを集計</h3>
 <ul>
-<li><code>hugo</code>コマンドで作成した記事からHTMLなどを生成し、公開できる状態にビルドします</li>
-<li>デフォルトでは未来の日付を生成しない事に注意です
+<li><code>ionice -c2 -n7 nice -n19 cat access_log.txt | awk -F\&quot; '{print $4}'|sort | uniq -c</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">245</span> -
+</span></span></code></pre></div><ul>
+<li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk -F\&quot; '{print $4}'|sort | uniq -c</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> -
+</span></span></code></pre></div><h3 id="user-agentヘッダを集計">User-agentヘッダを集計</h3>
 <ul>
-<li><code>-F</code>オプションで出力する事が出来ます</li>
+<li><code>ionice -c2 -n7 nice -n19 cat access_log.txt | awk -F\&quot; '{print $6}'|sort | uniq -c</code></li>
 </ul>
-</li>
-<li>その他オプションは公式ドキュメントで確認を</li>
-<li><a href="https://gohugo.io/commands/hugo/">https://gohugo.io/commands/hugo/</a></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">3</span> Mozilla/5.0 <span style="color:#ff79c6">(</span>Macintosh; Intel Mac OS X 10_15_1<span style="color:#ff79c6">)</span> AppleWebKit/537.36 <span style="color:#ff79c6">(</span>KHTML, like Gecko<span style="color:#ff79c6">)</span> Chrome/78.0.3904.108 Safari/537.36
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">242</span> check_http/v2.3.3
+</span></span></code></pre></div><ul>
+<li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk -F\&quot; '{print $6}'|sort | uniq -c</code></li>
 </ul>
-<h2 id="公開のススメ">公開のススメ</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> check_http/v2.3.3
+</span></span></code></pre></div><h2 id="おまけ">おまけ</h2>
 <ul>
-<li>コマンドとは関係ないですがついでなので</li>
-<li>gitHubに保存して、gitHubWorkflowにてビルド、公開するのがおすすめ</li>
-<li>公開は<span style="color:deepskyblue;">gitHubAction</span>か<span style="color:deepskyblue;">netlify</span>が簡単</li>
+<li>よくタイムスタンプの月省略が分からなくなるので</li>
 </ul>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Jan: January <span style="color:#ff79c6">(</span>1月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Feb: February <span style="color:#ff79c6">(</span>2月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Mar: March <span style="color:#ff79c6">(</span>3月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Apr: April <span style="color:#ff79c6">(</span>4月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>May: May <span style="color:#ff79c6">(</span>5月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Jun: June <span style="color:#ff79c6">(</span>6月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Jul: July <span style="color:#ff79c6">(</span>7月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Aug: August <span style="color:#ff79c6">(</span>8月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Sep: September <span style="color:#ff79c6">(</span>9月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Oct: October <span style="color:#ff79c6">(</span>10月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Nov: November <span style="color:#ff79c6">(</span>11月<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>Dec: December <span style="color:#ff79c6">(</span>12月<span style="color:#ff79c6">)</span>
+</span></span></code></pre></div>
 
                 
 
@@ -307,15 +339,10 @@ if (!doNotTrack) {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/" data-toggle="tooltip" data-placement="top" title="Dockerまとめ">&larr;
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/" data-toggle="tooltip" data-placement="top" title="tmuxコマンド">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/" data-toggle="tooltip" data-placement="top" title="tmuxコマンド">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

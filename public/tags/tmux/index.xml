@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tmux on SORA のメモ帳</title>
+    <link>https://warm-cascaron-0c6d56.netlify.app/tags/tmux/</link>
+    <description>Recent content in tmux on SORA のメモ帳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tmuxコマンド</title>
+      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/</guid>
+      <description>tmuxコマンド チートシート コマンドでの操作 操作 コマンド セッション作成 tmux 名前を付けて作成 tmux new -s 名前 セッション一覧 tmux ls クライアント一覧 tmux lsc セッ</description>
+    </item>
+    
+  </channel>
+</rss>

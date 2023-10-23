@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="viの覚え書きまとめ" />
-    <meta property="og:title" content="viの覚え書きまとめ" />
-    <meta property="twitter:title" content="viの覚え書きまとめ" />
+    <meta name="title" content="tmuxコマンド" />
+    <meta property="og:title" content="tmuxコマンド" />
+    <meta property="twitter:title" content="tmuxコマンド" />
     
 
     
-    <meta name="description" content="viの基本">
-    <meta property="og:description" content="viの基本" />
-    <meta property="twitter:description" content="viの基本" />
+    <meta name="description" content="tmux">
+    <meta property="og:description" content="tmux" />
+    <meta property="twitter:description" content="tmux" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="sora tec">
     <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon.ico">
 
-    <title>viの覚え書きまとめ | SORA のメモ帳</title>
+    <title>tmuxコマンド | SORA のメモ帳</title>
 
-    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-20-vihelp/">
+    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/">
 
     
     
@@ -195,9 +195,13 @@ if (!doNotTrack) {
                             memo
                         </a>
                         
+                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/tmux" title="tmux">
+                            tmux
+                        </a>
+                        
                     </div>
-                    <h1>viの覚え書きまとめ</h1>
-                    <h2 class="subheading">記憶の整理もかねて</h2>
+                    <h1>tmuxコマンド</h1>
+                    <h2 class="subheading">チートシート</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -205,7 +209,7 @@ if (!doNotTrack) {
                                      &#34;sora&#34;
                              
                             on 
-                            Thursday, April 20, 2023
+                            Wednesday, October 11, 2023
                             
                             
                             
@@ -231,175 +235,189 @@ if (!doNotTrack) {
                 post-container">
 
                 
-                <h1 id="viの基本">「viの基本」</h1>
-<hr>
-<h3 id="基本知識">基本知識</h3>
-<ul>
-<li>viはテキストエディタでCUIでも利用出来る</li>
-<li>オペレーター操作やリピートによる繰り返しなど便利な機能がある</li>
-<li>GUIによる操作が出来ない</li>
-<li>モードが４つに分かれており、ノーマルモードを介してそれぞれのモードへ入る</li>
-</ul>
-<h3 id="カーソルの移動">カーソルの移動</h3>
+                <h1 id="tmuxコマンド-チートシート">tmuxコマンド チートシート</h1>
+<h2 id="コマンドでの操作">コマンドでの操作</h2>
 <table>
 <thead>
 <tr>
-<th>動作</th>
-<th>キー</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>左</td>
-<td>h</td>
-</tr>
-<tr>
-<td>右</td>
-<td>j</td>
-</tr>
-<tr>
-<td>上</td>
-<td>k</td>
-</tr>
-<tr>
-<td>下</td>
-<td>l</td>
-</tr>
-</tbody>
-</table>
-<h1 id="モードについて">「モードについて」</h1>
-<hr>
-<h3 id="ノーマルモード">ノーマルモード</h3>
-<ul>
-<li>テキスト編集に特化した機能がたくさんある</li>
-</ul>
-<h4 id="カウント">カウント</h4>
-<ul>
-<li>yやpなどのコマンドを指定した回数分を繰り返し実行するコマンド</li>
-<li>3yならyyyと同じになる</li>
-</ul>
-<h4 id="モーション">モーション</h4>
-<ul>
-<li>カーソル移動コマンド</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>モーション</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0(ゼロ)</td>
-<td>行頭へ移動</td>
-</tr>
-<tr>
-<td>$</td>
-<td>行末へ移動</td>
-</tr>
-<tr>
-<td>gg</td>
-<td>ファイルの先頭へ</td>
-</tr>
-<tr>
-<td>G</td>
-<td></td>
-</tr>
-<tr>
-<td>{count}G</td>
-<td>指定した行へ</td>
-</tr>
-</tbody>
-</table>
-<h4 id="オペレーター">オペレーター</h4>
-<ul>
-<li>操作のコマンド</li>
-<li>カウントとモーションコマンドと組み合わせることができる</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>オペレーター</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>y</td>
-<td>ヤンク</td>
-</tr>
-<tr>
-<td>d</td>
-<td>削除</td>
-</tr>
-<tr>
-<td>c</td>
-<td>変更（削除後挿入モードに）</td>
-</tr>
-</tbody>
-</table>
-<h4 id="テキストオブジェクト">テキストオブジェクト</h4>
-<ul>
-<li>テキストを一つの意味のあるまとまりとして扱うことができる</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>テキストオブジェクト</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>iw</td>
-<td>ホワイトスペースを含まないwordを選択</td>
-</tr>
-<tr>
-<td>aw</td>
-<td>ホワイトスペースを含むwordを選択</td>
-</tr>
-<tr>
-<td>ip</td>
-<td>段落の内部を選択</td>
-</tr>
-<tr>
-<td>ap</td>
-<td>段落を選択</td>
-</tr>
-</tbody>
-</table>
-<h4 id="その他">その他</h4>
-<ul>
-<li>色々あるけど<code>help</code>コマンドで調べよう</li>
-</ul>
-<table>
-<thead>
-<tr>
+<th>操作</th>
 <th>コマンド</th>
-<th>説明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>u</td>
-<td>[count]個の変更を元に戻す（undo）</td>
+<td>セッション作成</td>
+<td><code>tmux</code></td>
 </tr>
 <tr>
-<td>Ctrl-r</td>
-<td>undoされた変更を[count]個やり直す（redo）</td>
+<td>名前を付けて作成</td>
+<td><code>tmux new -s 名前</code></td>
 </tr>
 <tr>
-<td>Ctrl-u</td>
-<td>画面半分上にスクロール</td>
+<td>セッション一覧</td>
+<td><code>tmux ls</code></td>
 </tr>
 <tr>
-<td>Ctrl-d</td>
-<td>画面半分下にスクロール</td>
+<td>クライアント一覧</td>
+<td><code>tmux lsc</code></td>
+</tr>
+<tr>
+<td>セッション再開</td>
+<td><code>tmux a</code></td>
+</tr>
+<tr>
+<td>セッション再開(指定)</td>
+<td><code>tmux a -t 名前</code></td>
+</tr>
+<tr>
+<td>セッション終了</td>
+<td><code>tmux kill-session</code></td>
+</tr>
+<tr>
+<td>セッション終了(指定)</td>
+<td><code>tmux kill-session -t 名前</code></td>
+</tr>
+<tr>
+<td>.tmux.confの再読込</td>
+<td><code>tmux source ~/.tmux.conf</code></td>
 </tr>
 </tbody>
 </table>
-
+<h2 id="プレフィックスデフォルト-ctrlbを使用した操作">プレフィックス(デフォルト Ctrl+b)を使用した操作</h2>
+<h3 id="基本操作">基本操作</h3>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>　コマンド　</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>キーバインド一覧</td>
+<td><code>?</code></td>
+</tr>
+<tr>
+<td>セッション一覧</td>
+<td><code>s</code></td>
+</tr>
+<tr>
+<td>セッションからデタッチ</td>
+<td><code>d</code></td>
+</tr>
+<tr>
+<td>セッション名変更</td>
+<td><code>$</code></td>
+</tr>
+<tr>
+<td>コマンドモードに切り替え</td>
+<td><code>:</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ウィンドウ操作">ウィンドウ操作</h3>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>コマンド</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ウィンドウ作成</td>
+<td><code>c</code></td>
+</tr>
+<tr>
+<td>ウィンドウ一覧</td>
+<td><code>w</code></td>
+</tr>
+<tr>
+<td>ウィンドウ移動</td>
+<td><code>0~9</code></td>
+</tr>
+<tr>
+<td>ウィンドウの破棄</td>
+<td><code>&amp;</code></td>
+</tr>
+<tr>
+<td>次のウインドウへ移動</td>
+<td><code>n</code></td>
+</tr>
+<tr>
+<td>前のウインドウへ移動</td>
+<td><code>p</code></td>
+</tr>
+<tr>
+<td>以前のウインドウへ移動</td>
+<td><code>l</code></td>
+</tr>
+<tr>
+<td>ウィンドウの名前変更</td>
+<td><code>,</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ペイン操作">ペイン操作</h3>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>　コマンド　</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左右分割</td>
+<td><code>%</code></td>
+</tr>
+<tr>
+<td>上下にペイン分割</td>
+<td><code>&quot;</code></td>
+</tr>
+<tr>
+<td>ペインの破棄</td>
+<td><code>x</code></td>
+</tr>
+<tr>
+<td>ペインを移動</td>
+<td><code>o</code></td>
+</tr>
+<tr>
+<td>最大化/復帰</td>
+<td><code>z</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="おすすめtmuxconf">おすすめtmux.conf</h3>
+<ul>
+<li><code>~/.tmux.conf</code>に設定する</li>
+<li><code>tmux source-file ~/.tmux.conf</code>で設定保存</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># プレフィックスキーをCtrl+qに変更</span>
+</span></span><span style="display:flex;"><span> unbind C-b
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">set</span> -g prefix C-q
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">bind</span> C-q send-prefix
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># コピーモードの操作をviスタイルにする</span>
+</span></span><span style="display:flex;"><span> setw -g mode-keys vi
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># マウスを使用可能にする</span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">set</span> -g mouse on
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Shift + カーソルキーでペインのサイズ調整</span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">bind</span> -n S-Up resize-pane -U <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">bind</span> -n S-Down resize-pane -D <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">bind</span> -n S-Left resize-pane -L <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">bind</span> -n S-Right resize-pane -R <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># r で設定ファイルをリロードする</span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">bind</span> r source-file ~/.tmux.conf<span style="color:#f1fa8c">\;</span> display-message <span style="color:#f1fa8c">&#34;Reload Config!!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># 別ウィンドウの動作を通知する</span>
+</span></span><span style="display:flex;"><span> setw -g monitor-activity on
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">set</span> -g visual-activity on
+</span></span></code></pre></div>
 
                 
 
@@ -408,13 +426,13 @@ if (!doNotTrack) {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/" data-toggle="tooltip" data-placement="top" title="gitの覚え書きまとめ">&larr;
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/" data-toggle="tooltip" data-placement="top" title="Hugoコマンドメモ">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/" data-toggle="tooltip" data-placement="top" title="[GGST]鰤自分メモ">Next
+                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-23-logcommands/" data-toggle="tooltip" data-placement="top" title="ログコマンド">Next
                             Post &rarr;</a>
                     </li>
                     

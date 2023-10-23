@@ -6,20 +6,11 @@
     <description>Recent content in Tags on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hugo</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/tags/hugo/</link>
-      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://warm-cascaron-0c6d56.netlify.app/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>memo</title>
       <link>https://warm-cascaron-0c6d56.netlify.app/tags/memo/</link>
-      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://warm-cascaron-0c6d56.netlify.app/tags/memo/</guid>
       <description></description>
@@ -28,9 +19,27 @@
     <item>
       <title>tech</title>
       <link>https://warm-cascaron-0c6d56.netlify.app/tags/tech/</link>
-      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://warm-cascaron-0c6d56.netlify.app/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>https://warm-cascaron-0c6d56.netlify.app/tags/tmux/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://warm-cascaron-0c6d56.netlify.app/tags/tmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://warm-cascaron-0c6d56.netlify.app/tags/hugo/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://warm-cascaron-0c6d56.netlify.app/tags/hugo/</guid>
       <description></description>
     </item>
     
