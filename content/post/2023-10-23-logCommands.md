@@ -74,7 +74,11 @@ Time                 Id Command    Argument
 242 127.0.0.1
 ```
 
-- `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk '{print $1}' | sort | uniq -c`
+- 指定時間から最新まで
+  - `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk '{print $1}' | sort | uniq -c`
+- 指定範囲内
+  - `awk -v start="[07/Jun/2021:17:49:25" -v end="[07/Jun/2021:19:00:00" '$4 > start && $4 < end' access_log.txt | awk '{print $1}' | sort | uniq -c`
+  - `awk -v start="07/Jun/2021:10:25:35" -v end="07/Jun/2021:11:25:35" '{ gsub(/\[/, "", $4); } $4 >= start && $4 < end' access_log.txt | awk '{print $1}' | sort | uniq -c`
 
 ```bash
   6 127.0.0.1
@@ -89,7 +93,11 @@ Time                 Id Command    Argument
   3 GET /bulletins HTTP/1.1
 ```
 
-- `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk -F\" '{print $2}'  |sort | uniq -c`
+- 指定時間から最新まで
+  - `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk -F\" '{print $2}'  |sort | uniq -c`
+- 指定範囲内
+  - `awk -v start="[07/Jun/2021:17:49:25" -v end="[07/Jun/2021:19:00:00" '$4 > start && $4 < end' access_log.txt | awk -F\" '{print $2}'  |sort | uniq -c`
+  - `awk -v start="07/Jun/2021:10:25:35" -v end="07/Jun/2021:11:25:35" '{ gsub(/\[/, "", $4); } $4 >= start && $4 < end' access_log.txt | awk -F\" '{print $2}'  |sort | uniq -c`
 
 ```bash
   6 GET / HTTP/1.0
@@ -103,7 +111,11 @@ Time                 Id Command    Argument
 245 -
 ```
 
-- `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk -F\" '{print $4}'|sort | uniq -c`
+- 指定時間から最新まで
+  - `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk -F\" '{print $4}'|sort | uniq -c`
+- 指定範囲内
+  - `awk -v start="[07/Jun/2021:17:49:25" -v end="[07/Jun/2021:19:00:00" '$4 > start && $4 < end' access_log.txt | awk -F\" '{print $4}'  |sort | uniq -c`
+  - `awk -v start="07/Jun/2021:10:25:35" -v end="07/Jun/2021:11:25:35" '{ gsub(/\[/, "", $4); } $4 >= start && $4 < end' access_log.txt | awk -F\" '{print $4}'  |sort | uniq -c`
 
 ```bash
   6 -
@@ -118,7 +130,11 @@ Time                 Id Command    Argument
 242 check_http/v2.3.3
 ```
 
-- `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk -F\" '{print $6}'|sort | uniq -c`
+- 指定時間から最新まで
+  - `ionice -c2 -n7 nice -n19 awk -v date="[07/Jun/2021:17:49:25" '$4 > date' access_log.txt | awk -F\" '{print $6}'|sort | uniq -c`
+- 指定範囲内
+  - `awk -v start="[07/Jun/2021:17:49:25" -v end="[07/Jun/2021:19:00:00" '$4 > start && $4 < end' access_log.txt | awk -F\" '{print $6}'|sort | uniq -c`
+  - `awk -v start="07/Jun/2021:10:25:35" -v end="07/Jun/2021:11:25:35" '{ gsub(/\[/, "", $4); } $4 >= start && $4 < end' access_log.txt | awk -F\" '{print $6}'|sort | uniq -c`
 
 ```bash
   6 check_http/v2.3.3
@@ -142,3 +158,5 @@ Oct: October (10月)
 Nov: November (11月)
 Dec: December (12月)
 ```
+
+- Alfredを使っているなら`{isodate:dd/MMM/yyyy:HH:mm:ss}`で出力する事も
