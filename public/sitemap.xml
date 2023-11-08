@@ -2,83 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/categories/</loc>
+    <loc>https://soramemo.netlify.app/categories/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/memo/</loc>
+    <loc>https://soramemo.netlify.app/tags/memo/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/</loc>
+    <loc>https://soramemo.netlify.app/post/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/</loc>
+    <loc>https://soramemo.netlify.app/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/</loc>
+    <loc>https://soramemo.netlify.app/tags/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/tech/</loc>
+    <loc>https://soramemo.netlify.app/tags/tech/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/categories/tech/</loc>
+    <loc>https://soramemo.netlify.app/categories/tech/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-23-logcommands/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-10-23-logcommands/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/tmux/</loc>
+    <loc>https://soramemo.netlify.app/tags/tmux/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-10-11-tmux/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/hugo/</loc>
+    <loc>https://soramemo.netlify.app/tags/hugo/</loc>
     <lastmod>2023-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-9-6-hugocommands/</loc>
     <lastmod>2023-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/docker/</loc>
+    <loc>https://soramemo.netlify.app/tags/docker/</loc>
     <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-5-29-docker/</loc>
     <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/network/</loc>
+    <loc>https://soramemo.netlify.app/tags/network/</loc>
     <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-23-network1/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-5-23-network1/</loc>
     <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-04-24-ggstbri/</loc>
     <lastmod>2023-04-24T17:43:33+09:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/life/</loc>
+    <loc>https://soramemo.netlify.app/tags/life/</loc>
     <lastmod>2023-04-24T17:43:33+09:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/categories/life/</loc>
+    <loc>https://soramemo.netlify.app/categories/life/</loc>
     <lastmod>2023-04-24T17:43:33+09:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-20-vihelp/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-04-20-vihelp/</loc>
     <lastmod>2023-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-04-05-githelp/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/post/2023-02-01-codeanalysiseditor/</loc>
+    <loc>https://soramemo.netlify.app/post/2023-02-01-codeanalysiseditor/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/tags/make/</loc>
+    <loc>https://soramemo.netlify.app/tags/make/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/about/</loc>
+    <loc>https://soramemo.netlify.app/about/</loc>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/notes/</loc>
+    <loc>https://soramemo.netlify.app/notes/</loc>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/search/placeholder/</loc>
+    <loc>https://soramemo.netlify.app/search/placeholder/</loc>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/archive/</loc>
+    <loc>https://soramemo.netlify.app/archive/</loc>
   </url><url>
-    <loc>https://warm-cascaron-0c6d56.netlify.app/search/</loc>
+    <loc>https://soramemo.netlify.app/search/</loc>
   </url>
 </urlset>

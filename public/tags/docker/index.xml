@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on SORA のメモ帳</title>
-    <link>https://warm-cascaron-0c6d56.netlify.app/tags/docker/</link>
+    <link>https://soramemo.netlify.app/tags/docker/</link>
     <description>Recent content in docker on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 29 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soramemo.netlify.app/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dockerまとめ</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/</link>
+      <link>https://soramemo.netlify.app/post/2023-5-29-docker/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-5-29-docker/</guid>
       <description>Dockerまとめ ０章 初めに Dockerを学習した際のメモ帳です １章 Dockerとは 1.1 Docker概要 コンテナ仮想化技術を利用したアプリケー</description>
     </item>
     

@@ -2,125 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SORA のメモ帳</title>
-    <link>https://warm-cascaron-0c6d56.netlify.app/</link>
+    <link>https://soramemo.netlify.app/</link>
     <description>Recent content on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soramemo.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ログコマンド</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-23-logcommands/</link>
+      <link>https://soramemo.netlify.app/post/2023-10-23-logcommands/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-23-logcommands/</guid>
-      <description>各種ログ調査コマンド アクセスログファイル場所の確認 httpd -SでApacheのルートを見つける grep CustomLog /etc/httpd/conf*/*でCusto</description>
+      <guid>https://soramemo.netlify.app/post/2023-10-23-logcommands/</guid>
+      <description>各種ログ調査コマンド ログサンプル # アクセスログ 110.15.201.15 - - [07/Jun/2021:15:16:25 +0900] &amp;#34;GET /bulletins HTTP/1.1&amp;#34; 504 9345 &amp;#34;-&amp;#34; &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&amp;#34; 110.15.201.15 - - [07/Jun/2021:15:17:17 +0900] &amp;#34;GET /bulletins HTTP/1.1&amp;#34; 504 9345 &amp;#34;-&amp;#34; &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108</description>
     </item>
     
     <item>
       <title>tmuxコマンド</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/</link>
+      <link>https://soramemo.netlify.app/post/2023-10-11-tmux/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-10-11-tmux/</guid>
       <description>tmuxコマンド チートシート コマンドでの操作 操作 コマンド セッション作成 tmux 名前を付けて作成 tmux new -s 名前 セッション一覧 tmux ls クライアント一覧 tmux lsc セッ</description>
     </item>
     
     <item>
       <title>Hugoコマンドメモ</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/</link>
+      <link>https://soramemo.netlify.app/post/2023-9-6-hugocommands/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-9-6-hugocommands/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-9-6-hugocommands/</guid>
       <description>Hugoコマンドメモ 前振り 毎回使うたびにHugoのコマンドを調べているので、自分のためにもまとめました HugoはGoで記述された静的サイトジ</description>
     </item>
     
     <item>
       <title>Dockerまとめ</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/</link>
+      <link>https://soramemo.netlify.app/post/2023-5-29-docker/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-29-docker/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-5-29-docker/</guid>
       <description>Dockerまとめ ０章 初めに Dockerを学習した際のメモ帳です １章 Dockerとは 1.1 Docker概要 コンテナ仮想化技術を利用したアプリケー</description>
     </item>
     
     <item>
       <title>Networkまとめ①</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-23-network1/</link>
+      <link>https://soramemo.netlify.app/post/2023-5-23-network1/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-5-23-network1/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-5-23-network1/</guid>
       <description>Networkまとめ① 0章 初めに 「ネットワークはなぜつながるのか」という本を学びながら、その他いろいろ調べたことのまとめです このサイトを見る</description>
     </item>
     
     <item>
       <title>[GGST]鰤自分メモ</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/</link>
+      <link>https://soramemo.netlify.app/post/2023-04-24-ggstbri/</link>
       <pubDate>Mon, 24 Apr 2023 17:43:33 +0900</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-24-ggstbri/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-04-24-ggstbri/</guid>
       <description>鰤の個人的めも 鰤から始めた初心者なので参考程度にお願いします。 ローリングガード後の基本 中段択 ダスト 重ねｋ 下段択 空かし２ｋ 投げ ロックザもあり 2</description>
     </item>
     
     <item>
       <title>viの覚え書きまとめ</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-20-vihelp/</link>
+      <link>https://soramemo.netlify.app/post/2023-04-20-vihelp/</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-20-vihelp/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-04-20-vihelp/</guid>
       <description>「viの基本」 基本知識 viはテキストエディタでCUIでも利用出来る オペレーター操作やリピートによる繰り返しなど便利な機能がある GUIによる操</description>
     </item>
     
     <item>
       <title>gitの覚え書きまとめ</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/</link>
+      <link>https://soramemo.netlify.app/post/2023-04-05-githelp/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-04-05-githelp/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-04-05-githelp/</guid>
       <description>「gitの基本」 gitとは ファイルのバージョン管理システム 誰がいつ何を編集したのか分かる スナップショットのように管理されていていつでも戻れる</description>
     </item>
     
     <item>
       <title>CodeAnalysisEditor</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/post/2023-02-01-codeanalysiseditor/</link>
+      <link>https://soramemo.netlify.app/post/2023-02-01-codeanalysiseditor/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/post/2023-02-01-codeanalysiseditor/</guid>
+      <guid>https://soramemo.netlify.app/post/2023-02-01-codeanalysiseditor/</guid>
       <description>CodeAnalysisEditorとは プログラミングのコードを翻訳してくれるサイトです</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/about/</link>
+      <link>https://soramemo.netlify.app/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/about/</guid>
+      <guid>https://soramemo.netlify.app/about/</guid>
       <description>About Me 読書＆ゲーム好き インフラに詳しくなりたい</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/notes/</link>
+      <link>https://soramemo.netlify.app/notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/notes/</guid>
+      <guid>https://soramemo.netlify.app/notes/</guid>
       <description>HUGO </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/search/placeholder/</link>
+      <link>https://soramemo.netlify.app/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/search/placeholder/</guid>
+      <guid>https://soramemo.netlify.app/search/placeholder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts Archive</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/archive/</link>
+      <link>https://soramemo.netlify.app/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/archive/</guid>
+      <guid>https://soramemo.netlify.app/archive/</guid>
       <description></description>
     </item>
     

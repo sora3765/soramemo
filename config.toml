@@ -1,4 +1,4 @@
-baseurl = "https://warm-cascaron-0c6d56.netlify.app"
+baseurl = "https://soramemo.netlify.app"
 title = "SORA のメモ帳"
 theme = "hugo-theme-cleanwhite"
 languageCode = "ja-jp"

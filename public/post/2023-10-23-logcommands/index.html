@@ -32,40 +32,40 @@
     
 
     <meta name="keyword"  content="sora tec">
-    <link rel="shortcut icon" href="https://warm-cascaron-0c6d56.netlify.app/img/favicon.ico">
+    <link rel="shortcut icon" href="https://soramemo.netlify.app/img/favicon.ico">
 
     <title>ログコマンド | SORA のメモ帳</title>
 
-    <link rel="canonical" href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-23-logcommands/">
+    <link rel="canonical" href="https://soramemo.netlify.app/post/2023-10-23-logcommands/">
 
     
     
     
-    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://soramemo.netlify.app/css/bootstrap.min.css">
 
     
-    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/hugo-theme-cleanwhite.min.css">
+    <link rel="stylesheet" href="https://soramemo.netlify.app/css/hugo-theme-cleanwhite.min.css">
 
     
-    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/zanshang.css">
+    <link rel="stylesheet" href="https://soramemo.netlify.app/css/zanshang.css">
 
     
     <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
 
     
-    <link rel="stylesheet" href="https://warm-cascaron-0c6d56.netlify.app/css/custom-font.css">
+    <link rel="stylesheet" href="https://soramemo.netlify.app/css/custom-font.css">
 
     
-    <script src="https://warm-cascaron-0c6d56.netlify.app/js/jquery.min.js"></script>
+    <script src="https://soramemo.netlify.app/js/jquery.min.js"></script>
 
     
-    <script src="https://warm-cascaron-0c6d56.netlify.app/js/bootstrap.min.js"></script>
+    <script src="https://soramemo.netlify.app/js/bootstrap.min.js"></script>
 
     
-    <script src="https://warm-cascaron-0c6d56.netlify.app/js/hux-blog.min.js"></script>
+    <script src="https://soramemo.netlify.app/js/hux-blog.min.js"></script>
 
     
-    <script src="https://warm-cascaron-0c6d56.netlify.app/js/lazysizes.min.js"></script>
+    <script src="https://soramemo.netlify.app/js/lazysizes.min.js"></script>
 
     
     
@@ -101,7 +101,7 @@ if (!doNotTrack) {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://warm-cascaron-0c6d56.netlify.app/">SORA のメモ帳</a>
+            <a class="navbar-brand" href="https://soramemo.netlify.app/">SORA のメモ帳</a>
         </div>
 
         
@@ -110,29 +110,29 @@ if (!doNotTrack) {
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/">All Posts</a>
+                        <a href="https://soramemo.netlify.app/">All Posts</a>
                     </li>
                     
                         
                         <li>
-                            <a href="https://warm-cascaron-0c6d56.netlify.app/categories/life/">life</a>
+                            <a href="https://soramemo.netlify.app/categories/life/">life</a>
                         </li>
                         
                         <li>
-                            <a href="https://warm-cascaron-0c6d56.netlify.app/categories/tech/">tech</a>
+                            <a href="https://soramemo.netlify.app/categories/tech/">tech</a>
                         </li>
                         
                     
                     
 		    
-                        <li><a href="https://warm-cascaron-0c6d56.netlify.app/archive//">ARCHIVE</a></li>
+                        <li><a href="https://soramemo.netlify.app/archive//">ARCHIVE</a></li>
                     
-                        <li><a href="https://warm-cascaron-0c6d56.netlify.app/notes//">NOTES</a></li>
+                        <li><a href="https://soramemo.netlify.app/notes//">NOTES</a></li>
                     
-                        <li><a href="https://warm-cascaron-0c6d56.netlify.app/about//">ABOUT</a></li>
+                        <li><a href="https://soramemo.netlify.app/about//">ABOUT</a></li>
                     
 		            <li>
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/search"><i class="fa fa-search"></i></a>
+                        <a href="https://soramemo.netlify.app/search"><i class="fa fa-search"></i></a>
 		           </li>
                 </ul>
             </div>
@@ -187,11 +187,11 @@ if (!doNotTrack) {
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/tech" title="tech">
+                        <a class="tag" href="https://soramemo.netlify.app/tags/tech" title="tech">
                             tech
                         </a>
                         
-                        <a class="tag" href="https://warm-cascaron-0c6d56.netlify.app/tags/memo" title="memo">
+                        <a class="tag" href="https://soramemo.netlify.app/tags/memo" title="memo">
                             memo
                         </a>
                         
@@ -232,11 +232,6 @@ if (!doNotTrack) {
 
                 
                 <h1 id="各種ログ調査コマンド">各種ログ調査コマンド</h1>
-<h2 id="アクセスログファイル場所の確認">アクセスログファイル場所の確認</h2>
-<ul>
-<li><code>httpd -S</code>でApacheのルートを見つける</li>
-<li><code>grep CustomLog  /etc/httpd/conf*/*</code>でCustomLogの記述を見つける</li>
-</ul>
 <h2 id="ログサンプル">ログサンプル</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># アクセスログ</span>
 </span></span><span style="display:flex;"><span>110.15.201.15 - - <span style="color:#ff79c6">[</span>07/Jun/2021:15:16:25 +0900<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET /bulletins HTTP/1.1&#34;</span> <span style="color:#bd93f9">504</span> <span style="color:#bd93f9">9345</span> <span style="color:#f1fa8c">&#34;-&#34;</span> <span style="color:#f1fa8c">&#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#34;</span>
@@ -261,6 +256,10 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>Tcp port: <span style="color:#bd93f9">3306</span>  Unix socket: /var/lib/mysql/mysql.sock
 </span></span><span style="display:flex;"><span>Time                 Id Command    Argument
 </span></span></code></pre></div><h2 id="アクセスログ集計">アクセスログ集計</h2>
+<ul>
+<li><code>httpd -S</code>でApacheのルートを見つける</li>
+<li><code>grep CustomLog  /etc/httpd/conf*/*</code>でCustomLogの記述を見つける</li>
+</ul>
 <h3 id="1分間隔で集計">1分間隔で集計</h3>
 <ul>
 <li><code>ionice -c2 -n7 nice -n19 cat /var/log/httpd/access_log |awk -F\[ '{print $2}' | cut -c2-17 | sort | uniq -c</code></li>
@@ -268,7 +267,10 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">3</span> 7/Jun/2021:10:01
 </span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span> 7/Jun/2021:10:03
 </span></span><span style="display:flex;"><span><span style="color:#bd93f9">1</span> 7/Jun/2021:10:05
-</span></span></code></pre></div><h3 id="１０分間隔で集計">１０分間隔で集計</h3>
+</span></span></code></pre></div><ul>
+<li><code>ionice -c2 -n7 nice -n19 awk -v start=&quot;07/Jun/2021:10:25:35&quot; -v end=&quot;07/Jun/2021:11:25:35&quot; '{ gsub(/\[/, &quot;&quot;, $4); } $4 &gt; start &amp;&amp; $4 &lt; end' /var/log/httpd/access_log |awk -F\[ '{print $2}' | cut -c2-17 | sort | uniq -c</code></li>
+</ul>
+<h3 id="１０分間隔で集計">１０分間隔で集計</h3>
 <ul>
 <li><code>ionice -c2 -n7 nice -n19 cat /var/log/httpd/access_log | awk -F\[ '{print $2}' | cut -c2-16 | sort | uniq -c</code></li>
 </ul>
@@ -282,7 +284,17 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">3</span> 110.15.201.15
 </span></span><span style="display:flex;"><span><span style="color:#bd93f9">242</span> 127.0.0.1
 </span></span></code></pre></div><ul>
+<li>指定時間から最新まで
+<ul>
 <li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk '{print $1}' | sort | uniq -c</code></li>
+</ul>
+</li>
+<li>指定範囲内
+<ul>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;[07/Jun/2021:17:49:25&quot; -v end=&quot;[07/Jun/2021:19:00:00&quot; '$4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk '{print $1}' | sort | uniq -c</code></li>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;07/Jun/2021:10:25:35&quot; -v end=&quot;07/Jun/2021:11:25:35&quot; '{ gsub(/\[/, &quot;&quot;, $4); } $4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk '{print $1}' | sort | uniq -c</code></li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> 127.0.0.1
 </span></span></code></pre></div><h3 id="アクセス先uriを集計">アクセス先URIを集計</h3>
@@ -292,7 +304,17 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">242</span> GET / HTTP/1.0
 </span></span><span style="display:flex;"><span>  <span style="color:#bd93f9">3</span> GET /bulletins HTTP/1.1
 </span></span></code></pre></div><ul>
+<li>指定時間から最新まで
+<ul>
 <li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk -F\&quot; '{print $2}'  |sort | uniq -c</code></li>
+</ul>
+</li>
+<li>指定範囲内
+<ul>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;[07/Jun/2021:17:49:25&quot; -v end=&quot;[07/Jun/2021:19:00:00&quot; '$4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk -F\&quot; '{print $2}'  |sort | uniq -c</code></li>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;07/Jun/2021:10:25:35&quot; -v end=&quot;07/Jun/2021:11:25:35&quot; '{ gsub(/\[/, &quot;&quot;, $4); } $4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk -F\&quot; '{print $2}'  |sort | uniq -c</code></li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> GET / HTTP/1.0
 </span></span></code></pre></div><h3 id="リファラーを集計">リファラーを集計</h3>
@@ -301,7 +323,17 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bd93f9">245</span> -
 </span></span></code></pre></div><ul>
+<li>指定時間から最新まで
+<ul>
 <li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk -F\&quot; '{print $4}'|sort | uniq -c</code></li>
+</ul>
+</li>
+<li>指定範囲内
+<ul>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;[07/Jun/2021:17:49:25&quot; -v end=&quot;[07/Jun/2021:19:00:00&quot; '$4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk -F\&quot; '{print $4}'  |sort | uniq -c</code></li>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;07/Jun/2021:10:25:35&quot; -v end=&quot;07/Jun/2021:11:25:35&quot; '{ gsub(/\[/, &quot;&quot;, $4); } $4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk -F\&quot; '{print $4}'  |sort | uniq -c</code></li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> -
 </span></span></code></pre></div><h3 id="user-agentヘッダを集計">User-agentヘッダを集計</h3>
@@ -311,10 +343,28 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">3</span> Mozilla/5.0 <span style="color:#ff79c6">(</span>Macintosh; Intel Mac OS X 10_15_1<span style="color:#ff79c6">)</span> AppleWebKit/537.36 <span style="color:#ff79c6">(</span>KHTML, like Gecko<span style="color:#ff79c6">)</span> Chrome/78.0.3904.108 Safari/537.36
 </span></span><span style="display:flex;"><span><span style="color:#bd93f9">242</span> check_http/v2.3.3
 </span></span></code></pre></div><ul>
+<li>指定時間から最新まで
+<ul>
 <li><code>ionice -c2 -n7 nice -n19 awk -v date=&quot;[07/Jun/2021:17:49:25&quot; '$4 &gt; date' access_log.txt | awk -F\&quot; '{print $6}'|sort | uniq -c</code></li>
 </ul>
+</li>
+<li>指定範囲内
+<ul>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;[07/Jun/2021:17:49:25&quot; -v end=&quot;[07/Jun/2021:19:00:00&quot; '$4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk -F\&quot; '{print $6}'|sort | uniq -c</code></li>
+<li><code>sudo ionice -c2 -n7 nice -n19 awk -v start=&quot;07/Jun/2021:10:25:35&quot; -v end=&quot;07/Jun/2021:11:25:35&quot; '{ gsub(/\[/, &quot;&quot;, $4); } $4 &gt; start &amp;&amp; $4 &lt; end' access_log.txt | awk -F\&quot; '{print $6}'|sort | uniq -c</code></li>
+</ul>
+</li>
+</ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#bd93f9">6</span> check_http/v2.3.3
-</span></span></code></pre></div><h2 id="おまけ">おまけ</h2>
+</span></span></code></pre></div><h2 id="mysqlログ集計">MySQLログ集計</h2>
+<ul>
+<li>ログ確認
+<ul>
+<li><code>/etc/my.cnf``/etc/my.cnf.d/mysql-server.cnf</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="おまけ">おまけ</h2>
 <ul>
 <li>よくタイムスタンプの月省略が分からなくなるので</li>
 </ul>
@@ -330,7 +380,10 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>Oct: October <span style="color:#ff79c6">(</span>10月<span style="color:#ff79c6">)</span>
 </span></span><span style="display:flex;"><span>Nov: November <span style="color:#ff79c6">(</span>11月<span style="color:#ff79c6">)</span>
 </span></span><span style="display:flex;"><span>Dec: December <span style="color:#ff79c6">(</span>12月<span style="color:#ff79c6">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><ul>
+<li>Alfredを使っているなら<code>{isodate:dd/MMM/yyyy:HH:mm:ss}</code>で出力する事も</li>
+</ul>
+
 
                 
 
@@ -339,7 +392,7 @@ if (!doNotTrack) {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/post/2023-10-11-tmux/" data-toggle="tooltip" data-placement="top" title="tmuxコマンド">&larr;
+                        <a href="https://soramemo.netlify.app/post/2023-10-11-tmux/" data-toggle="tooltip" data-placement="top" title="tmuxコマンド">&larr;
                             Previous Post</a>
                     </li>
                     
@@ -394,7 +447,7 @@ if (!doNotTrack) {
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="https://warm-cascaron-0c6d56.netlify.app/tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="https://soramemo.netlify.app/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                         
                         
@@ -407,7 +460,7 @@ if (!doNotTrack) {
                         
                         
                         
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/tags/memo" title="memo">
+                        <a href="https://soramemo.netlify.app/tags/memo" title="memo">
                             memo
                         </a>
                         
@@ -415,7 +468,7 @@ if (!doNotTrack) {
                         
                         
                         
-                        <a href="https://warm-cascaron-0c6d56.netlify.app/tags/tech" title="tech">
+                        <a href="https://soramemo.netlify.app/tags/tech" title="tech">
                             tech
                         </a>
                         

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SORA のメモ帳</title>
-    <link>https://warm-cascaron-0c6d56.netlify.app/categories/</link>
+    <link>https://soramemo.netlify.app/categories/</link>
     <description>Recent content in Categories on SORA のメモ帳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://warm-cascaron-0c6d56.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soramemo.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/categories/tech/</link>
+      <link>https://soramemo.netlify.app/categories/tech/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/categories/tech/</guid>
+      <guid>https://soramemo.netlify.app/categories/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LIFE</title>
-      <link>https://warm-cascaron-0c6d56.netlify.app/categories/life/</link>
+      <link>https://soramemo.netlify.app/categories/life/</link>
       <pubDate>Mon, 24 Apr 2023 17:43:33 +0900</pubDate>
       
-      <guid>https://warm-cascaron-0c6d56.netlify.app/categories/life/</guid>
+      <guid>https://soramemo.netlify.app/categories/life/</guid>
       <description></description>
     </item>
     
