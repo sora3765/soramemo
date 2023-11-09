@@ -1,7 +1,7 @@
 ---
 title:       "ログコマンド"
 subtitle:    "Linux調査用コマンド"
-description: "Linux調査用コマンド"
+description: "Linuxログコマンド"
 date:        2023-10-23
 author:      "sora"
 image:       "img/home-bg-net.png"
